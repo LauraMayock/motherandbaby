@@ -16,3 +16,6 @@
 <h3>Return user:
 <P>As a returning user, I will be taking advantage of the community resource links, such as a list of local doctors, contact information for the district nurse and speech and language therapists in the area, these are to name a few.
 I will also be able to keep up to date with local events for my little one e.g. little duckling swimming lessons in the local swimming pool, mother and baby yoga classes and family fun events.
+
+<h2>Design<h2>
+<p>I tried to keep the design simple and but also keep the users in mind give them as much value as possible within the remit given. I think this approach will make the user feel already part of the community and hopefully alleviate any anxiety they may feel about reaching out.
