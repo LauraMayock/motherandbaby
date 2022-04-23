@@ -3,3 +3,10 @@
 </p>
 <h1>Westport's Mother and Baby group.</h1>
 <P>They say it takes a village to raise a child, well this website aims to allow new parents to reach out to their community and build that support system. Not only will it outline Westport's Mother and baby group meetups and schedules, but also have a section for other events in Westport that may be of benefit and links to government/healthcare resources to support their family in the early years. </P>
+
+<h2>User experience:</h2>
+
+<h3> First time user:</h3>
+<p>As a first time visitor I want a clear understanding of the purpose of the page and to be able to navigate to the areas most important to me. I will be hoping to see local meet up schedules and a way to contact organisers if I have any other queries. It will be a nice surprise to have other local resource information and the option to be added to a Whats app group.</p>
+
+<P>I have tried to make the website intuitive by keeping the design simple and easy to navigate. I aim to try and make the users feel welcome with the imagery and tones that were chosen. I also aimed to give them as much value as HTML and CSS would allow with the added welcome of local resource links and local events not linked to the mother and baby group. In the future, other features may be added such as direct booking for future events, a blog, and a live chat area where moms can get to know each other on the site. 
