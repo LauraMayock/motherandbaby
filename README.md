@@ -18,4 +18,35 @@
 I will also be able to keep up to date with local events for my little one e.g. little duckling swimming lessons in the local swimming pool, mother and baby yoga classes and family fun events.
 
 <h2>Design<h2>
+
 <p>I tried to keep the design simple and but also keep the users in mind give them as much value as possible within the remit given. I think this approach will make the user feel already part of the community and hopefully alleviate any anxiety they may feel about reaching out.
+
+<h3>Colour scheme
+
+<P>I spent time choosing the right hero image as I feel it sets the tone of the page and connects with the user. The colour choice was then taken from this image to give the website a uniform and professional feel. 
+/*Two main colours and how I incorporated them throughout. */
+
+<h3>Typography
+
+<h3>Imagery
+
+<h2>Home page wireframe view:
+<p>Link to desk wireframe</P>
+
+<P>Link to tablet wireframe</p>
+
+<p>Link to smartphone wireframe</p>
+
+<h2>Features:
+<ul>
+<li>
+<li> Slide show of recent event.
+<li> Hover effect for navigation links.
+<li> Input form
+<li> video showing recent event.
+<li> Social media buttons
+<li>
+
+<h2>Technologies used</h2>
+
+<h2>Languages used
