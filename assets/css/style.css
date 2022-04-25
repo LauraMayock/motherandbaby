@@ -4,6 +4,7 @@ body{
   font-family: Comfortaa, Arial, sans-serif; 
 }
 
+}
 *{
     margin: 0;
     padding: 0;
@@ -29,7 +30,7 @@ video{
 #logo{
     height: 170px;
     position: absolute;
-    border: 1px solid turquoise;
+    border: 4px solid #086972;
     top: 70px;
     left:20px;
   }
@@ -96,4 +97,12 @@ font-size: 40px;
 .fa-brands{
   color:white;
 
+}
+
+/*body welcome page*/
+
+.welcome-text{
+  color: #086972;
+  text-align: center;
+  font-size: 30px;
 }
