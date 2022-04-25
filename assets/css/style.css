@@ -25,3 +25,20 @@ video{
     position: absolute;
     border: 1px solid turquoise;
   }
+
+  /*Navigation links*/
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  li {
+    float: right;
+    font-size: 130%;
+  }
+  
+  li a {
+    display: block;
+    padding: 8px;
