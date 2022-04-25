@@ -24,6 +24,8 @@ video{
     height: 170px;
     position: absolute;
     border: 1px solid turquoise;
+    top: 70px;
+    left:20px;
   }
 
   /*Navigation links*/
@@ -42,3 +44,4 @@ video{
   li a {
     display: block;
     padding: 8px;
+}
