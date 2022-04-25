@@ -17,7 +17,7 @@
 <P>As a returning user, I will be taking advantage of the community resource links, such as a list of local doctors, contact information for the district nurse and speech and language therapists in the area, these are to name a few.
 I will also be able to keep up to date with local events for my little one e.g. little duckling swimming lessons in the local swimming pool, mother and baby yoga classes and family fun events.
 
-<h2>Design<h2>
+<h2>Design
 
 <p>I tried to keep the design simple and but also keep the users in mind give them as much value as possible within the remit given. I think this approach will make the user feel already part of the community and hopefully alleviate any anxiety they may feel about reaching out.
 
@@ -29,6 +29,18 @@ I will also be able to keep up to date with local events for my little one e.g. 
 <h3>Typography
 
 <h3>Imagery
+<p>I found inspiration for my landing page from a fellow student's recent project submission.[Please see link attached](https://daooobg.github.io/yogaClubProject) I loved the movement used in her hero element and looked to recreate it myself.
+I have outlined some of my considerations in choosing the correct hero element below:
+<ul>
+<li> A video which is in tune with Mother and baby groups ethos.
+<li>Something engaging but not distracting.
+<li>No sharp sudden movements.
+<li>No obvious end and beginning.
+<li>Something that works well on most of not all screen sizes.
+ 
+ <P>After much searching consideration, I feel I have chosen a solid contender. 
+ [video](assets/images/pexels-max-vakhtbovych-7394158.mp4)
+ 
 
 <h2>Home page wireframe view:
 <p>Link to desk wireframe</P>
@@ -50,3 +62,12 @@ I will also be able to keep up to date with local events for my little one e.g. 
 <h2>Technologies used</h2>
 
 <h2>Languages used
+
+<H2>Testing
+<h3>Main hero element.
+<p>I tested my idea of using a video for my hero element by creating a mock-up in Gitpod. As it was one of the main focuses of the landing page I wanted it to not distract from the other important elements on the page. 
+I will also:
+<ul>
+<li>Ask for advice and guidance from my mentor.
+<li>Post on a Slack peer review channel to get feedback from a broader user base.
+</ul>
