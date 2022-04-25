@@ -36,9 +36,6 @@ video{
 
   /*Navigation links*/
 
-  #menu{
-   
-  }
 
   ul {
     list-style-type: none;
@@ -59,4 +56,12 @@ video{
     padding: 8px;
     text-decoration: none;
     color: #086972;
+  
 }
+ #menu a:hover{
+color:white;
+background-color: #086972;
+ }
+ .active{
+   border-bottom:1px solid #086972;
+ }
