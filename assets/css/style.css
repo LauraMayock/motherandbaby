@@ -19,3 +19,9 @@ video{
   position: relative;
   overflow: hidden;
 }
+
+#logo{
+    height: 170px;
+    position: absolute;
+    border: 1px solid turquoise;
+  }
