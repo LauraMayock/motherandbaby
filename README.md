@@ -32,7 +32,7 @@ I will also be able to keep up to date with local events for my little one e.g. 
 <p>I found inspiration for my landing page from a fellow student's recent project submission.[Please see link attached](https://daooobg.github.io/yogaClubProject) I loved the movement used in her hero element and looked to recreate it myself.
 I have outlined some of my considerations in choosing the correct hero element below:
 <ul>
-<li> A video which is in tune with Mother and baby groups ethos.
+<li>A video which is in tune with Mother and baby groups ethos.
 <li>Something engaging but not distracting.
 <li>No sharp sudden movements.
 <li>No obvious end and beginning.
@@ -70,4 +70,5 @@ I will also:
 <ul>
 <li>Ask for advice and guidance from my mentor.
 <li>Post on a Slack peer review channel to get feedback from a broader user base.
-</ul>
+
+<P>My original positioning of the hero video meant that you needed to scroll down to see the image in full. I corrected this by placing the scroll bar on top of the image.
