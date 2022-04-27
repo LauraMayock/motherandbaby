@@ -107,8 +107,15 @@ text-align: left;
   line-height: 20px;
  }
 
-input{
+#name-field{
   width:300px;
+}
+
+#email-field{
+  width:300px;
+}
+
+input{
   display: inline-block;
   text-align: left;
 }
