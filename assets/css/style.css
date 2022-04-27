@@ -209,3 +209,12 @@ padding-top:10px;
 #time-table h2{
   padding-bottom:8px;
 }
+a{
+  color:white;
+}
+
+/* mouse over link */
+a:hover {
+  color: #086972;
+  background-color: white;
+}
