@@ -108,13 +108,47 @@ font-size: 40px;
 }
 
 /*body welcome page*/
-
+#quote{
+  padding:10px;
+  height: 200px;
+  width:auto;
+}
 .welcome-text{
   color: #086972;
   text-align: center;
   font-size: 30px;
+  margin: 20px;
+}
+/*Benifets*/
+
+#ethos{
+  height: 600px;
+  width:100%;
+}
+#ethos img{
+  height: 400px;
+  clear: both;
+
 }
 
+#image-father{
+ back-ground: url("https://res.cloudinary.com/dwnm1wdkt/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1651035948/Project%201/pexels-rodnae-productions-6849611_rdfkwy.jpg") alt="father holding baby">
+ padding-top:30px;
+ width:33%;
+ float:left;
+ background-color: #086972;
+padding: 20px;
+
+}
+#benifets{
+  float: left;
+  width: 56%;
+  line-height: 20px;
+  background: #086972;
+  color: white;
+  text-align: left;
+  padding: 20px;
+}
 /* Meet up schedule */
 
 #kids-blocks{ 
@@ -127,20 +161,22 @@ font-size: 40px;
   overflow:hidden;
   z-index: -1;
 }
+#time-table{
+  width:20%;
+  height:200px;
+  text-align:center;
+  border:2px solid white;
 
+}
 #time-table div{
 color:white;
 background-color: #086972;
-width:20%;
-height:300px;
 float:left;
 padding:30px 0 0 10px;
-text-align:center center;
-border:2px solid white;
 display: inline;
-
 }
 
 #times h2{
   font-size: 40px;
 }
+
