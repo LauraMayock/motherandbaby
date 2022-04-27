@@ -78,29 +78,56 @@ background-color: #086972;
  /*footer*/
 
  footer{
-   height: 200px;
+   height: 300px;
    color: white;
    background-color: #086972;
-   font-size: 20px;
-   ;
+   font-size: 20px; 
  }
- #contact{
+
+#contact{
 font-family: Patua One, Times New Roman, sans-serif;
 margin-left: 10px;
 padding-left: 1%;
-font-size: 40px;
+font-size: 20px;
+clear:both;
+text-align: left;
  }
 
  #contact-info{
-  margin-left: 20px;
+  margin: 20px 0 0 20px;
+  font-size: 15px;
   padding: 10px;
+  float:left;
  }
 
+ #contact-us{
+  float: right;
+  font-size: 15px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  line-height: 20px;
+ }
+
+input{
+  width:300px;
+  display: inline-block;
+  text-align: left;
+}
+.buttom{
+padding: 16px 32px;
+text-decoration: none;
+margin: 4px 2px;
+cursor: pointer;
+}
+#message{
+  width: 300px;
+}
  #social-media{
-   text-align: right;
+   text-align: left;
    font-size: 160%;
    margin-right: 10px;
    padding: 10px 0 10px 5px;
+   clear:both;
  }
 .fa-brands{
   color:white;
