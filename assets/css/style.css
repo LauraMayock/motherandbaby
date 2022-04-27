@@ -147,7 +147,14 @@ padding: 20px;
   background: #086972;
   color: white;
   text-align: left;
-  padding: 20px;
+  padding: 25px 20px;
+  height: 394px;
+}
+#benifets h2,h3{
+  padding-bottom: 20px;
+}
+#benifets ul{
+  list-style-type: square;
 }
 /* Meet up schedule */
 
