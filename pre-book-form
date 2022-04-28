@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Mother and baby, toddler, Westport, mayo, west of ireland, connocht">
+    <meta description="Mother and baby group, Westport, Mayo, Ireland" > 
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Westport's Mother and baby group</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" >
+            <img id="logo" src="https://res.cloudinary.com/dwnm1wdkt/image/upload/v1650729962/Project%201/Mother_and_baby_Logo_hxc9uo.png" alt="Westport Mother and baby group logo"> 
+        </a>
+        <nav>
+            <ul id="menu">
+               
+                <li>
+                    <a href="#">Contact us</a>
+                </li>
+                <li>
+                    <a href="#">Testimonials</a>
+                </li>
+                <li>
+                    <a href="#">Events</a>
+                </li>
+                <li>
+                    <a class="active" href="index.html">Home</a>
+                </li>
+            </ul>
+        </nav>
+ </header>
+ <div id="contact-photo">
+  
+ </div>
+        <section>
+            Goals of the mother and baby group.
+        </section>
+        <section>
+            Info on weekly meet ups.
+        </section>
+
+<footer>
+    <span id="contact">Contact us</span>
+
+    <div id="contact-info">
+        <ul>
+         <li>
+             <i class="fa-solid fa-location-dot"></i>  The Fairgreen, Westport, Co. Mayo 
+            </li>
+            <li>
+            <i class="fa-solid fa-envelope"></i>  motherandbabygroup.westport@yahoo.com
+        </li>
+        <li>
+            <i class="fa-solid fa-phone"></i> 098-254675
+        </li>
+</ul>
+ </div>
+
+<div id="social-media">
+ <a href="http:/www.facebook.com" target="_blank" rel="noopener" aria-label="Find us on Facebook (Link opens in a new tab)"> <i class="fa-brands fa-facebook"></i></a>
+ <a href="http:/www.Instagram.com" target="_blank" rel="noopener" aria-label="Find us on Instagram (Link opens in a new tab)"> <i class="fa-brands fa-instagram"></i></a>
+</div>
+ <Map> to be decided if this will be a embedded map or link</Map>
+    
+    local resources links
+</footer>
+<!--Font awesome script-->
+<script src="https://kit.fontawesome.com/9fec73d71e.js" crossorigin="anonymous"></script>
+</body>
+</html>
