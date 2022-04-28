@@ -252,6 +252,16 @@ a:hover {
 }
 
 /* Testimonial section*/
+#comments{
+  background-color: #086972;
+  margin-bottom: 50px;
+}
+#heading{
+  text-align: center;
+  padding:5px;
+  font-size: 50px;
+  color:white;
+}
 
 .testimonials{
 display: grid;
@@ -268,13 +278,14 @@ background: #086972;
   padding: 0 10px;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
 }
 .wrapper .box{
-  background: #fff;
-  width: calc(33% - 10px);
+  background: white;
+  width: calc(30% - 10px);
   padding: 20px;
+  margin-top:10px;
   border-radius: 3px;
   box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
 }
@@ -308,7 +319,7 @@ background: #086972;
   height: 75px;
   width: 75px;
   padding: 3px;
-  background: #086972;
+  background:#086972;
   border-radius: 50%;
 }
 .content .image img{
@@ -316,10 +327,10 @@ background: #086972;
   width: 100%;
   object-fit: cover;
   border-radius: 50%;
-  border: 2px solid #fff;
+  border: 2px solid white;
 }
 .box:hover .content .image img{
-  border-color: #fff;
+  border-color: white;
 }
 @media (max-width: 1045px) {
   .wrapper .box{
