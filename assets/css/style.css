@@ -333,15 +333,105 @@ background: #086972;
   border-color: white;
 }
 
-  /* Yoga mom Gallary */
-  .carousel-item{
-    min-height: 280px;
-  
+
+/*Events sections */
+#header{
+  height:300px;
 }
-#myCarousel img{
+  /* Yoga mom Gallary */
+#gallery{
+height: 80rem;
+width: 80rem;
+padding: 0;
+margin: 0;
+display: flex;
+
+}
+
+#gallery div img {
+flex: 0 32%;
+height: 100px;
+margin-bottom: 2%;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+
+
+/* Pre-booking form */
+
+#form-photo img{
   height:100%;
   width:100%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 1045px) {
   .wrapper .box{
