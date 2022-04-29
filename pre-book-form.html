@@ -37,13 +37,65 @@
  </img>
  </div>
   <h1 id="Form">Pre-Booking Form.</h1>
+  <p>Please complete the below form if you would like to attend any of our upcoming events:</p>
  </div>
-        <section>
-            Goals of the mother and baby group.
-        </section>
-        <section>
-            Info on weekly meet ups.
-        </section>
+<section>
+<form action="http://formdump.codeinstitute.net" method="post">
+    <fieldset>
+        <legend>Your details:</legend>
+        <div>
+            <label for="name-field" class="block-label">Name</label>
+            <input id="name-field" type="text" name="full_name" placeholder="Your name" required>
+        </div>
+        <div>
+            <label for="email-field" class="block-label">Email</label>
+            <input id="email-field" type="email" name="email" placeholder="Your email" required>
+        </div>
+        <div>
+            <label for="babys-name-field" class="block-label">Name</label>
+            <input id="babys-name-field" type="text" name="full_babys-name" placeholder="Your baby's name">
+        </div>
+
+        <label for="baby's-age" class="block-label">Baby's age</label>
+        <select id="baby's-age" name="baby's-age" required>
+            <option value="under-3-months">Under 3 months</option>
+            <option value="3-6_months">3-6 months</option>
+            <option value="6-12_months">6-12 months</option>
+            <option value="12-24_months">12-24 months</option>
+            <option value="pre-school">Pre-school</option>
+
+    
+        </select>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Upcoming events and courses:</legend>
+        <label for="course-choice">Courses</label>
+        <select id="course" name="course">
+        <input list="course-choice" type="text">
+        <datalist id="course-choice">
+<option value="Mommy and me yoga classes"></option>
+<option value="Baby message"></option>
+
+<label for="Event-choice">Events</label>
+        <select id="event" name="event">
+        <input list="event-choice" type="text">
+        <datalist id="event-choice">
+<option value="Baby lead weaning"></option>
+<option value="Easter family fun"></option>
+</select>
+        </datalist>
+       
+    <input type="submit" class="block-label" value="Pre-Book">
+    <input type="reset" value="Reset Form"
+
+    </fieldset>
+</form>
+
+
+</section>
+        
 
 <footer>
     <span id="contact">Contact us</span>
