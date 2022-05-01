@@ -336,15 +336,11 @@ background: #086972;
 
 /*Events sections */
  
- #body {
-  color:white;
-  background-color:#086972;
-}
 #event-heading{
   height:300px;
   color:white;
   text-align: center;
-  positon:relative;
+  position:relative;
 }
 
 
@@ -363,6 +359,8 @@ vertical-align: baseline;
 display: flex;
 flex-wrap: wrap;
 align-items: rigth;
+color:white;
+background-color:#086972;
 }
 
 #container div {
@@ -386,6 +384,21 @@ justify-content: space-between;
   color: #086972;
 }
 
+#massage{
+  margin-left: 200px;
+  margin-top: -40px;
+  padding-top: 30px;
+  text-align: center;
+  background: white;
+  color: #086972;
+
+}
+.container-massage{
+  height: 56rem;
+  padding: 5%;
+  color:white;
+  background-color:#086972;
+  }
 /* Pre-booking form */
 
 #form-photo img{
