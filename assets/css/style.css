@@ -335,28 +335,56 @@ background: #086972;
 
 
 /*Events sections */
-#header{
+ 
+ #body {
+  color:white;
+  background-color:#086972;
+}
+#event-heading{
   height:300px;
+  color:white;
+  text-align: center;
+  positon:relative;
 }
+
+
   /* Yoga mom Gallary */
-#gallery{
-height: 80rem;
-width: 80rem;
-padding: 0;
-margin: 0;
-display: flex;
 
+.events{
+margin-top: 20px;
+font-size: 40px;
 }
 
-#gallery div img {
+
+.container{
+height: 56rem;
+padding: 5%;
+vertical-align: baseline;
+display: flex;
+flex-wrap: wrap;
+align-items: rigth;
+}
+
+#container div {
 flex: 0 32%;
 height: 100px;
-margin-bottom: 2%;
-flex-wrap: wrap;
+margin-bottom: 2px;
 justify-content: space-between;
 }
 
+.item{
+  height: 200px;
+  width: 200px;
+  margin: 5px;
+}
 
+#yoga{
+  margin-left: 200px;
+  margin-top: 150px;
+  text-align: center;
+  background: white;
+  color: #086972;
+}
 
 /* Pre-booking form */
 
