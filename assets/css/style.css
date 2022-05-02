@@ -437,6 +437,17 @@ justify-content: space-between;
     }
 /* Pre-booking form */
 
+/* link to pre-booking form */
+
+.container-massage a{
+  color:#086972;
+  font-weight: 700;
+  
+}
+.container a{
+  color:#086972;
+  font-weight: 700;
+}
 #form-photo img{
   height:100%;
   width:100%;
@@ -444,16 +455,31 @@ justify-content: space-between;
 }
 
 
+/*resource page */
 
+#resource{
+    margin-top: 20px;
+    font-size: 20px;
+    height:300px;
+    }
 
+    #resource table{
+        height: 56rem;
+        padding: 200px 150px 0;
+          align-items: rigth;
+          color:white;
+          background-color:#086972;
+          }
+      
+  #dr-list >table{
+    width: 100%; 
+    border:5px solid white;
+  }
 
-
-
-
-
-
-
-
+  #dr-list >tr th{
+    border: 1px solid white;
+  }
+ 
 
 
 
