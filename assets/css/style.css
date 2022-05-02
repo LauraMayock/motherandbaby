@@ -394,7 +394,7 @@ justify-content: space-between;
 
 }
 .container-massage{
-  height: 56rem;
+  height: 26rem;
   padding: 5%;
   color:white;
   background-color:#086972;
@@ -410,21 +410,37 @@ justify-content: space-between;
   
   }
   .container-weaning{
-    height: 56rem;
+    height: 45rem;
     padding: 5%;
     color:white;
     background-color:#086972;
+    margin-left: 200px;
+    margin-top: -40px;
+    padding-top: 30px;
     }
   
     #weaning{
-      height: 400px;
-      width: 400px;
+    height: 70px;
+    width: 400px;
+    text-align: center;
+    background: white;
+    color: #086972;
+    padding: 50px 150px 350px 150px;
+    }
+    .video-section{
+      height: 700px;
+      background-color: #086972;
+    }
+
+    .container-weaning h4{
+      padding-top: 20px;
     }
 /* Pre-booking form */
 
 #form-photo img{
   height:100%;
   width:100%;
+  align-items: right;
 }
 
 
