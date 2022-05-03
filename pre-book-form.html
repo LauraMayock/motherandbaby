@@ -71,25 +71,16 @@
 
     <fieldset>
         <legend>Upcoming events and courses:</legend>
-        <label for="course-choice">Courses</label>
-        <select id="course" name="course">
-        <input list="course-choice" type="text">
-        <datalist id="course-choice">
-<option value="Mommy and me yoga classes"></option>
-<option value="Baby message"></option>
-
-<label for="Event-choice">Events</label>
-        <select id="event" name="event">
-        <input list="event-choice" type="text">
-        <datalist id="event-choice">
-<option value="Baby lead weaning"></option>
-<option value="Easter family fun"></option>
+        <input id="Mommy and me yoga" type="radio" name="course" required> 
+<label for="course-choice">Mommy and me yoga</label>
+       
+<input id="Baby Massage" type="radio" name="course" required> 
+<label for="course-choice">Baby Massage</label>
+    
 </select>
-        </datalist>
        
     <input type="submit" class="block-label" value="Pre-Book">
-    <input type="reset" value="Reset Form"
-
+    <input type="reset" value="Reset Form">
     </fieldset>
 </form>
 
@@ -98,29 +89,59 @@
         
 
 <footer>
-    <span id="contact">Contact us</span>
+    <section>
 
-    <div id="contact-info">
-        <ul>
-         <li>
-             <i class="fa-solid fa-location-dot"></i>  The Fairgreen, Westport, Co. Mayo 
+        <div id="contact-info">
+           <ul>
+               <h4>Contact us</h4>
+               <br>
+                <i class="fa-solid fa-location-dot"></i>  
+                The Fairgreen, <br>
+                Westport, <br>
+                Co. Mayo
+            </li>
+           <li>
+               <i class="fa-solid fa-envelope"></i>
+               motherandbabygroup.westport@yahoo.com
             </li>
             <li>
-            <i class="fa-solid fa-envelope"></i>  motherandbabygroup.westport@yahoo.com
-        </li>
-        <li>
-            <i class="fa-solid fa-phone"></i> 098-254675
-        </li>
-</ul>
- </div>
-
-<div id="social-media">
- <a href="http:/www.facebook.com" target="_blank" rel="noopener" aria-label="Find us on Facebook (Link opens in a new tab)"> <i class="fa-brands fa-facebook"></i></a>
- <a href="http:/www.Instagram.com" target="_blank" rel="noopener" aria-label="Find us on Instagram (Link opens in a new tab)"> <i class="fa-brands fa-instagram"></i></a>
-</div>
- <Map> to be decided if this will be a embedded map or link</Map>
+                <i class="fa-solid fa-phone"></i> 
+                098-254675
+            </li>
+        </ul>
+        <br>
+        <span id="social-media">
+        <a href="http:/www.facebook.com" target="_blank" rel="noopener" aria-label="Find us on Facebook (Link opens in a new tab)"> <i class="fa-brands fa-facebook"></i></a>
+        <a href="http:/www.Instagram.com" target="_blank" rel="noopener" aria-label="Find us on Instagram (Link opens in a new tab)"> <i class="fa-brands fa-instagram"></i></a>
+    </span>
+    </div>  
     
-    local resources links
+    <div id="contact-us">
+    <form id="form" action="https://formdump.codeinstitute.net" method="post">
+        
+            <h4>Get in touch:</h4>
+            <div>
+            <label for="name-field" class="block-lable">Name:</label><br>
+    <input id="name-field" type="text" name="full_name" placeholder="Your Name" required> 
+        </div>
+        <div>
+            <label for="email-field" class="block-lable">Email:</label><br>
+    <input id="email-field" type="email" name="email" placeholder="Your Email" required> 
+        </div>
+    
+        <label for="message" class=""block-lable>Message:</label><br>
+        <textarea id="message" type="text" name="message" placeholder="Message" rows="5" style-height="60px" required></textarea>
+        <br>
+        <input id="button" type="submit" value="Submit">
+    
+      </form>
+    </div>
+    
+    
+    </section>
+    
+    
+    </footer>
 </footer>
 <!--Font awesome script-->
 <script src="https://kit.fontawesome.com/9fec73d71e.js" crossorigin="anonymous"></script>

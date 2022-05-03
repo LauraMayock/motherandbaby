@@ -460,15 +460,16 @@ justify-content: space-between;
 #resource{
     margin-top: 20px;
     font-size: 20px;
-    height:300px;
+    height:1400px;
+    color: white;
+    padding-top: 200px;
+    background-color: #086972;
     }
 
     #resource table{
-        height: 56rem;
-        padding: 200px 150px 0;
-          align-items: rigth;
           color:white;
           background-color:#086972;
+          width: 100%;
           }
       
   #dr-list >table{
@@ -476,14 +477,16 @@ justify-content: space-between;
     border:5px solid white;
   }
 
-  #dr-list >tr th{
+  tr, th{
     border: 1px solid white;
+    padding:10px;
+  }
+
+  #list-headings{
+background-color: #086972;
+padding:20px 0;
   }
  
-
-
-
-
 
 
 
