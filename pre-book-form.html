@@ -24,6 +24,9 @@
                     <a href="#comments" aria-label="Go to Testimonials section.">Testimonials</a>
                 </li>
                 <li>
+                    <a href="resources.html">Resources</a>
+                </li>
+                <li>
                     <a href="events.html">Events</a>
                 </li>
                 <li>
@@ -32,17 +35,18 @@
             </ul>
         </nav>
  </header>
- <div id="form-photo">
-    <img src="https://res.cloudinary.com/dwnm1wdkt/image/upload/v1651264272/Project%201/pexels-tatiana-syrikova-3933250-min_l71ezs.jpg" alt ="baby holding up toy blocks.">
- </img>
- </div>
-  <h1 id="Form">Pre-Booking Form.</h1>
-  <p>Please complete the below form if you would like to attend any of our upcoming events:</p>
- </div>
+</div >
+
 <section>
-<form action="http://formdump.codeinstitute.net" method="post">
-    <fieldset>
-        <legend>Your details:</legend>
+    <div id="form-section">
+        
+       
+<form action="http://formdump.codeinstitute.net" method="post" class="sign-up-photo">
+</div>
+<div id="sign-up-form">
+    <fieldset class="fieldset">
+        <legend>Your Details:</legend>
+       
         <div>
             <label for="name-field" class="block-label">Name</label>
             <input id="name-field" type="text" name="full_name" placeholder="Your name" required>
@@ -55,7 +59,7 @@
             <label for="babys-name-field" class="block-label">Name</label>
             <input id="babys-name-field" type="text" name="full_babys-name" placeholder="Your baby's name">
         </div>
-
+        <div>
         <label for="baby's-age" class="block-label">Baby's age</label>
         <select id="baby's-age" name="baby's-age" required>
             <option value="under-3-months">Under 3 months</option>
@@ -63,29 +67,37 @@
             <option value="6-12_months">6-12 months</option>
             <option value="12-24_months">12-24 months</option>
             <option value="pre-school">Pre-school</option>
-
-    
         </select>
+    </div>
 
-    </fieldset>
+        </fieldset>
 
-    <fieldset>
-        <legend>Upcoming events and courses:</legend>
-        <input id="Mommy and me yoga" type="radio" name="course" required> 
-<label for="course-choice">Mommy and me yoga</label>
-       
-<input id="Baby Massage" type="radio" name="course" required> 
-<label for="course-choice">Baby Massage</label>
-    
-</select>
-       
-    <input type="submit" class="block-label" value="Pre-Book">
-    <input type="reset" value="Reset Form">
-    </fieldset>
+        <div id="course-choice"></div>
+        <fieldset>
+            <legend>Course choices:</legend>
+        
+            <input id="Mommy and me yoga" type="radio" name="course" required> 
+            <label for="course-choice">Mommy and me yoga</label>
+            <br>
+            <input id="Baby Massage" type="radio" name="course" required> 
+            <label for="course-choice">Baby Massage</label>
+        </fieldset>
+<br>
+            <input type="checkbox" id="whats-app-group" name="whats-app-group">
+            <label for="whats-app-group-approval">Click to join our Whats app group</label>
+
+   <div id="submit-button">
+       <input type="submit" value="Pre-Book">
+       </div>
+       <div id="reset-button">
+       <input type="reset" value="Reset Form">
+    </div>
+    </div>
+    </section>
+</fieldset>
 </form>
+</div>
 
-
-</section>
         
 
 <footer>
