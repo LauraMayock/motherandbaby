@@ -159,7 +159,7 @@ cursor: pointer;
 /*Benifets*/
 
 #ethos{
-  height: 500px;
+  height: 600px;
   width:100%;
 }
 #ethos img{
@@ -173,6 +173,7 @@ cursor: pointer;
  background: url("https://res.cloudinary.com/dwnm1wdkt/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1651035948/Project%201/pexels-rodnae-productions-6849611_rdfkwy.jpg") no-repeat center center;
  padding-top:30px;
  width: 35%;
+ height: 460px;
  float:left;
  background-color: #086972;
 padding: 20px;
@@ -180,12 +181,13 @@ padding: 20px;
 #benifets{
   float: left;
   width: 55%;
+  height: 500px;
   line-height: 20px;
   background: #086972;
   color: white;
   text-align: left;
   padding: 25px 20px;
-  height: 394px;
+ 
 }
 #benifets h2,h3{
   padding-bottom: 20px;
@@ -389,14 +391,14 @@ font-weight:700;
   color: white;
 }
 #massage{
-  margin-left: 250px;
-  margin-top: 100px;
-  padding-top: 30px;
-  text-align: center;
-  background: white;
-  color: #086972;
-
+  margin-left: 200px;
+    padding: 30px 0;
+    text-align: center;
+    background: white;
+    color: #086972;
+    width: 80%;
 }
+
 #container-massage div {
   flex: 0 32%;
   height: 100px;
@@ -404,11 +406,6 @@ font-weight:700;
   justify-content: space-between;
   }
   
-  .item{
-    height: 200px;
-    width: 200px;
-    margin: 5px;
-  }
 .container-massage{
   height: 26rem;
   padding: 5%;
@@ -416,18 +413,10 @@ font-weight:700;
   background-color:#086972;
   }
 
-  #massage{
-    margin-left: 200px;
-    margin-top: -40px;
-    padding: 30px 0;
-    text-align: center;
-    background: white;
-    color: #086972;
-  
-  }
+
 
   /* Weaning event */
-  
+
   .container-weaning{
     height: 45rem;
     padding: 5%;
@@ -439,13 +428,14 @@ font-weight:700;
     }
   
     #weaning{
-    height: 70px;
-    width: 470px;
-    text-align: center;
-    background: white;
-    color: #086972;
-    padding: 50px 150px 350px 150px;
+      width: 80%;
+      text-align: center;
+      color: #086972;
+      margin-left: 10px;
+      padding: 70px;
+      background-color: white;
     }
+
     .video-section{
       height: 700px;
       background-color: #086972;
@@ -592,25 +582,68 @@ padding:20px 0;
 
 /* Media Query */
 
-@media (max-width: 1045px) {
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
   .wrapper .box{
     width: calc(55% - 10px);
     margin: 10px 0;
   }
-}
- #benifets{
-   text-size-adjust: 15px;
- }
-/* Amend grainy images in Yoga section */
- img {
-  -webkit-backface-visability: hidden;
-  -ms-transform: translateZ(0); /* IE 9 */
-  -webkit-transform: translateZ(0); /* Chrome, Safari, Opera */
-  transform: translateZ(0);
+  .wrapper .box{
+    width: calc(0 - 0);
+    margin: 10px 0;
+  }
+  .welcome-text{
+    font-size: 20px;
+  }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+.nav-list{
+font-size: 12px;
 }
 
-@media (max-width: 702px) {
+#benifets{
+  width: 50%;
+}
+
+#benifets h2, h3 {
+  padding-bottom: 15px;
+}
+
+.wrapper .box {
+  padding: 10px;
+}
+
+#yoga{
+  margin-left: 100px;
+  margin-top: 200px;
+  padding: 30px;
+}
+.container-massage {
+  height: 45rem;
+}
+#massage {
+  margin-left: 70px;
+  padding: 30px;
+}
+
+.container-weaning{
+margin-left: 100px;
+    width: 600px;
+    padding:0;
+}
+#resource{
+  font-size: 15px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
   .wrapper .box{
     width: 100%;
   }
 }
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
