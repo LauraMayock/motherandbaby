@@ -571,61 +571,11 @@ padding:20px 0;
   }
  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Media Query */
 
 @media (max-width: 1045px) {
   .wrapper .box{
-    width: calc(50% - 10px);
+    width: calc(55% - 10px);
     margin: 10px 0;
   }
 
