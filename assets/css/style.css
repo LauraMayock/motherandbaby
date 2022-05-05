@@ -119,11 +119,15 @@ input{
   display: inline-block;
   text-align: left;
 }
-.buttom{
-padding: 16px 32px;
+#button{
+padding: 10px;
 text-decoration: none;
 margin: 4px 2px;
 cursor: pointer;
+}
+
+#button:hover{
+  border: 2px solid #086972;
 }
 #message{
   width: 300px;
@@ -337,33 +341,30 @@ background: #086972;
 
 /*Events sections */
  
-#event-heading{
-  height:300px;
-  color:white;
-  text-align: center;
-  position:relative;
-}
-
-
-  /* Yoga mom Gallary */
-
 .events{
-margin-top: 20px;
-font-size: 40px;
+  text-decoration: underline;
+}
+/* Yoga mom Gallary */
+
+#container-yoga {
+  margin-top: 50px;
+  text-align: center;
+  background: #086972;
+  color: white;
+  padding:10px;
+  width: 100%;
 }
 
-
-.container{
-height: 56rem;
-padding: 5%;
-vertical-align: baseline;
-display: flex;
-flex-wrap: wrap;
-align-items: rigth;
-color:white;
-background-color:#086972;
-}
-
+    #yoga{
+      margin-left: 250px;
+      margin-top: 100px;
+      padding: 30px 0;
+      text-align: center;
+      background: white;
+      color: #086972;
+      width: 70%;
+    }
+    
 #container div {
 flex: 0 32%;
 height: 100px;
@@ -377,23 +378,37 @@ justify-content: space-between;
   margin: 5px;
 }
 
-#yoga{
-  margin-left: 200px;
-  margin-top: 150px;
-  text-align: center;
-  background: white;
-  color: #086972;
+/* Form link buttom */
+#yoga a{
+color: #086972;
+font-weight:700;
 }
 
+#yoga a:hover{
+  background-color: #086972;
+  color: white;
+}
 #massage{
-  margin-left: 200px;
-  margin-top: -40px;
+  margin-left: 250px;
+  margin-top: 100px;
   padding-top: 30px;
   text-align: center;
   background: white;
   color: #086972;
 
 }
+#container-massage div {
+  flex: 0 32%;
+  height: 100px;
+  margin-bottom: 2px;
+  justify-content: space-between;
+  }
+  
+  .item{
+    height: 200px;
+    width: 200px;
+    margin: 5px;
+  }
 .container-massage{
   height: 26rem;
   padding: 5%;
@@ -404,12 +419,15 @@ justify-content: space-between;
   #massage{
     margin-left: 200px;
     margin-top: -40px;
-    padding-top: 30px;
+    padding: 30px 0;
     text-align: center;
     background: white;
     color: #086972;
   
   }
+
+  /* Weaning event */
+  
   .container-weaning{
     height: 45rem;
     padding: 5%;
@@ -422,7 +440,7 @@ justify-content: space-between;
   
     #weaning{
     height: 70px;
-    width: 400px;
+    width: 470px;
     text-align: center;
     background: white;
     color: #086972;
@@ -579,12 +597,20 @@ padding:20px 0;
     width: calc(55% - 10px);
     margin: 10px 0;
   }
+}
  #benifets{
    text-size-adjust: 15px;
  }
+/* Amend grainy images in Yoga section */
+ img {
+  -webkit-backface-visability: hidden;
+  -ms-transform: translateZ(0); /* IE 9 */
+  -webkit-transform: translateZ(0); /* Chrome, Safari, Opera */
+  transform: translateZ(0);
+}
+
 @media (max-width: 702px) {
   .wrapper .box{
     width: 100%;
   }
-}
 }
