@@ -14,8 +14,8 @@ body{
 /*hero image/video */
 
 video{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vw;
 }
 .video {
   top: 0;
@@ -70,9 +70,7 @@ video{
 color:white;
 background-color: #086972;
  }
- .active{
-   border-bottom: 5px solid #086972;
- }
+ 
 
  /*footer*/
 
@@ -457,7 +455,7 @@ font-weight:700;
 /* Pre-booking form */
 
 #form-section{
-  width:100%;
+  width:100vw;
   height:850px;
   background-color: #086972;
 }
@@ -466,7 +464,8 @@ font-weight:700;
 background: url("https://res.cloudinary.com/dwnm1wdkt/image/upload/v1651264272/Project%201/pexels-tatiana-syrikova-3933250-min_l71ezs.jpg");
 background-size:cover;
 background-position: center;
-height:800px;
+width: 100vw;
+height: 100vh;
 }
 
 #sign-up-form{
@@ -699,10 +698,132 @@ margin-top:40px;
 
 }
 #logo{
-  height:100px;
+  height: 80px;
+    margin-top: 0px;
 }
 .welcome-text{
 font-size: 15px;
 }
+#image-father{
+  width: 300px;
+    height: 200px;
+    padding: 20px 100px 0;
+}
+#ethos img {
+  height: 200px;
+  width: 100px;
+}
+#benifets {
+  font-size: 15px;
+  padding-left: 10px;
+  height: 800px;
+}
 
+#benifets h2 {
+  font-size: 20px;
+  
+}
+#time-table h2 {
+  margin-top: 170px;
+}
+#time-table div {
+  width:100%;
+  margin-bottom: 10px;
+}
+#buggy h2{
+margin-top:30px;
+}
+#heading{
+  margin-top: 600px;
+  padding: 10px;
+}
+#tea h2{
+  margin-top:30px;
+}
+#softpaly h2{
+  margin-top:30px;
+
+}
+.wrapper{
+  margin-left: 20px;
+    width: 400px;
+}
+#contact-info {
+  margin: 20px 0;
+}
+footer{
+  height:600px;
+}
+
+#contact-list li{
+  text-align: left;
+  font-size: 12px;
+}
+#yoga{
+  margin-left: 0;
+  width: 300px;
+}
+#yoga p{
+  padding:10px;
+}
+#massage{
+  margin-left: -5px;
+  width: 300px;
+}
+#massage p{
+  padding:10px;
+
+}
+.container-massage{
+  height: 1000px;
+}
+.container-weaning{
+  margin-left: 0;
+}
+ .container-weaning h4{
+  font-size: 15px;
+  width: 250px;
+  margin-left: -50px;
+
+ }
+#weaning{
+  width:150px;
+  margin-left: 0;
+}
+#weaning h3{
+  margin-top: -30px
+}
+#video-weaning{
+  margin: -10px -50px ;
+width:250px;
+}
+.video-section {
+  height: 600px;
+}
+#contact-info{
+  font-size: 12px;
+}
+#contact-info h4{
+  font-size: 20px;
+}
+
+.sign-up-photo{
+  height: 60vh
+}
+#sign-up-form{
+  margin-top: -600px;
+}
+
+#name-field {
+  width: 260px;
+  
+}
+#email-field{
+  width: 260px;
+  
+}
+#message{
+  width: 260px;
+  
+}
 }
