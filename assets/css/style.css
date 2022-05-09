@@ -172,14 +172,14 @@ cursor: pointer;
   color: white;
 }
 #ethos img{
-  height: 300px;
-  width: 200px;
+  height: 400px;
+  width: 400px;
 
 }
 
 #image-father{
  background: url("https://res.cloudinary.com/dwnm1wdkt/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1651035948/Project%201/pexels-rodnae-productions-6849611_rdfkwy.jpg") no-repeat center center;
- width: 230px;
+ width: 30%;
     height: 400px;
     float: left;
     background-color: #086972;
@@ -214,7 +214,7 @@ cursor: pointer;
 }
 #time-table{
   width:100%;
-  height:400px;
+  height:600px;
 
 }
 #time-table div{
@@ -222,7 +222,7 @@ cursor: pointer;
     background-color: #086972;
     padding: 20px 20px 20px 10px;
     display: inline;
-    width: 30%;
+    width: 25%;
     height: 300px;
     float: right;
     text-align: center;
@@ -704,7 +704,12 @@ width:250px;
 font-size: 50px;
  }
  
-
+ 
+ 
+ #time-table div{
+margin-bottom: 10px;
+width:300px;
+}
 
  
   } 
