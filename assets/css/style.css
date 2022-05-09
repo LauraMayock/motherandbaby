@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Patua+One&display=swap');
+@import url('https://res.cloudinary.com/dwnm1wdkt/image/upload/v1652136472/Project%201/VistaCreate-230837704-stock-photo-smiling-father-baby-daughter-sitting_1_-min_ffl5b3.jpg');
 
 body{
   font-family: Comfortaa, Arial, sans-serif; 
@@ -36,41 +36,47 @@ video{
 
   /*Navigation links*/
 
-.nav-list{
-  position: absolute;
-  background: white;
-  height: 40px;
+nav{
+background: white;
+  height: 80px;
   width: 100%;
-  z-index: 1;
-  top: 8px;
-  margin-right: 10px;
-}
-  # menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    
-  }
 
- nav li {
-    float: right;
-    font-size: 130%;
-    font-family: Patua One, Times New Roman, sans-serif;
-    
-  }
-  
-  li a {
-    display: block;
-    padding: 8px;
-    text-decoration: none;
-    color: #086972;
-  
 }
- #menu a:hover{
-color:white;
-background-color: #086972;
- }
- 
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+  font-size: 25px;
+  font-weight:700;
+
+}
+nav ul li a{
+  color: #086972; 
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+a.active,a:hover{
+  background: #086972;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: left;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
 
  /*footer*/
 
@@ -157,11 +163,13 @@ cursor: pointer;
   font-size: 25px;
   margin: 20px;
 }
-/*Benifets*/
+/*Ethos*/
 
 #ethos{
   height: 500px;
   width: 100%;
+  background-color: #086972;
+  color: white;
 }
 #ethos img{
   height: 300px;
@@ -178,28 +186,7 @@ cursor: pointer;
     padding: 20px 20px 0;
 }
 
-#benifets{
-  
-  width: 100%;
-  height: 400px;
-  line-height: 20px;
-  background: #086972;
-  color: white;
-  text-align: left;
-  padding: 25px 20px;
- 
-}
-#benifets h2,h3{
-  padding-bottom: 20px;
-}
-#benifets ul{
-  list-style-type: square;
-padding: 0 30px;
-}
 
-#benifets p{
-  padding: 0 20px;
-}
 /* Meet up schedule */
 
 .weekly{
@@ -556,150 +543,27 @@ height: 25px;
 }
 
 
-/*resource page */
-
-#resource{
-    margin-top: 20px;
-    font-size: 20px;
-    height:1400px;
-    color: white;
-    padding-top: 200px;
-    background-color: #086972;
-    }
-
-    #resource table{
-          color:white;
-          background-color:#086972;
-          width: 100%;
-          }
-      
-  #dr-list >table{
-    width: 100%; 
-    border:5px solid white;
-  }
-
-  tr, th{
-    border: 1px solid white;
-    padding:10px;
-  }
-
-  #list-headings{
-background-color: #086972;
-padding:20px 0;
-  }
- 
-
 /* Media Query */
-
-/*For larger screens from 1380px wide and down*/
-@media screen and (max-width: 1380px) {
-
-/*For larger screens from 1140px wide and down*/
-@media screen and (max-width: 1140px) {
-  .wrapper .box{
-    width: calc(55% - 10px);
-    margin: 10px 0;
-  }
-  .wrapper .box{
-    width: calc(0 - 0);
-    margin: 10px 0;
-  }
-  .welcome-text{
-    font-size: 25px;
-  }
-
-  #ethos{
-    height:700px;
-  }
-
-  #ethos-img{
-    height: 500px;
-    width: 400px;
-    margin-left: -10px;
-
-  } 
-  #benifets {
-    line-height: 1.5;
-    padding: 25px 20px;
-    height: 600px;
-    font-size: 20px;
-} 
-#benifets h2{
-  font-size: 30px;
-}
-
-}
-
-/*For screens from 720px wide and down*/
-@media screen and (max-width: 720px) {
-
-
-
-
-/*For screens from 590px wide and down*/
-@media screen and (max-width: 590px) {
-
-.nav-list{
-font-size: 15px;
-  }
-
-#logo{
-  height: 140px
-}
-
-.welcome-text{
-  font-size: 20px;
-}
-.welcome-text{
-  font-size:20px;
-}
-#benifets{
-  font-size: 15px;
-}
-#benifets h2{
-  padding-bottom:5px;{
-
-  }
-#image-father{
-  width: 220px;
-  height: 350px;
-}
-}
-
-
-/*For screens from 425px wide and down*/
-@media screen and (max-width: 425px) { 
-
-  li a {
-    padding: 5px;
-    font-size: 15px;
-  }
-#logo{
-  height: 120px;
-  margin-top: 45px;
-    
-}
-#video{
-  margin-top: 40px;
-}
-
-.welcome-text{
-  font-size: 15px;
-    margin: 10px;
-}
-}
 
 
 /*For screens from 320px wide and up*/
 @media screen and (min-width: 320px) { 
 
-#video {
-margin-top:40px;
-
+.nav-list{
+  width: 480px;
 }
+#video video {
+  margin-top: -20px;
+ 
+}
+#quote{
+  width:450px;
+  padding: 0;
+}
+
 #logo{
-  height: 80px;
-    margin-top: 0px;
+  height: 100px;
+  margin-top: 45px;
 }
 .welcome-text{
 font-size: 15px;
@@ -710,19 +574,11 @@ font-size: 15px;
     padding: 20px 100px 0;
 }
 #ethos img {
-  height: 200px;
-  width: 100px;
-}
-#benifets {
-  font-size: 15px;
-  padding-left: 10px;
-  height: 800px;
+  height: 300px;
+  width: 200px;
 }
 
-#benifets h2 {
-  font-size: 20px;
   
-}
 #time-table h2 {
   margin-top: 170px;
 }
@@ -827,3 +683,163 @@ width:250px;
   
 }
 }
+/*For larger screens from 1380px wide and down*/
+@media screen and (max-width: 1380px) {
+
+  #logo{
+   margin-top: 10px;
+    width: 450px;
+    height: 350px;
+  }
+  
+    #video video {
+      margin-top: -310px;
+  }
+
+  #quote{
+    width: 100%;
+    margin-top: -200px;
+  }
+#quote h1{
+font-size: 50px;
+ }
+ 
+
+
+ 
+  } 
+
+/*For larger screens from 1140px wide and down*/
+@media screen and (max-width: 1140px) {
+
+
+  /* nav bar */
+
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #086972;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #086972;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+  .wrapper .box{
+    width: calc(55% - 10px);
+    margin: 10px 0;
+  }
+  .wrapper .box{
+    width: calc(0 - 0);
+    margin: 10px 0;
+  }
+  .welcome-text{
+    font-size: 25px;
+  }
+
+
+  #ethos-img{
+    height: 500px;
+    width: 400px;
+    margin-left: -10px;
+
+  } 
+  
+
+
+/*For screens from 720px wide and down*/
+@media screen and (max-width: 720px) {
+
+  /* Nav bar */
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  *{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  nav{
+    background: white;
+    height: 80px;
+    width: 100%;
+  }
+
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: #086972;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  a.active,a:hover{
+    background: #1b9bff;
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+
+#video{
+    margin-top: -100px;
+  }
+#logo{
+  margin-top: 150px; 
+}
+
+}
+/*For screens from 590px wide and down*/
+
