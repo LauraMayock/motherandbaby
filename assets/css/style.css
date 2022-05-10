@@ -11,16 +11,17 @@ body{
     border: 0;
 }
 
+h2 {
+  font-size: 40px;
+}
 /*hero image/video */
 
 video{
     width: 100vw;
-    height: 100vw;
+   
 }
-.video {
-  top: 0;
-  left: 0;
-  height: 600px;
+#video {
+  height: 800px;
   width: 100%;
   z-index: -1;
   position: relative;
@@ -28,10 +29,10 @@ video{
 }
 
 #logo{
-    height: 170px;
-    position: absolute;
+    position: relative;
     border-radius: 0% 0% 45% 67% / 100% 71% 50% 0%;
     z-index: 2;
+    width: 40%;
   }
 
   /*Navigation links*/
@@ -81,24 +82,24 @@ a.active,a:hover{
  /*footer*/
 
  footer{
-   height: 300px;
+   height: 600px;
    color: white;
    background-color: #086972;
-   font-size: 20px; 
+   
  }
 
 #contact{
 font-family: Patua One, Times New Roman, sans-serif;
 margin-left: 10px;
 padding-left: 1%;
-font-size: 20px;
 clear:both;
 text-align: left;
+margin-right:50px
  }
 
+
  #contact-info{
-  margin: 20px 0 0 20px;
-  font-size: 15px;
+  font-size: 25px;
   padding: 10px;
   float:left;
  }
@@ -109,36 +110,55 @@ text-align: left;
  }
  #contact-us{
   float: right;
-  font-size: 15px;
+  font-size: 25px;
   padding: 12px 20px;
   box-sizing: border-box;
   line-height: 20px;
  }
 
+ #contact-us h3{
+  margin: 10px 200px 30px 0px;
+   }
+ 
 #name-field{
-  width:300px;
+  width: 500px;
+  height: 30px;
+  font-size: 25px;
+  margin: 15px 0;
+  padding: 5px;
 }
 
 #email-field{
-  width:300px;
+  width: 300px;
+  height: 30px;
+  font-size: 25px;
+  margin: 15px 0;
+  padding: 5px;
 }
 
 input{
   display: inline-block;
   text-align: left;
+  
 }
 #button{
 padding: 10px;
 text-decoration: none;
 margin: 4px 2px;
 cursor: pointer;
+font-size: 25px;
+color: #086972;
 }
 
 #button:hover{
   border: 2px solid #086972;
 }
 #message{
-  width: 300px;
+  width: 500px;
+  height: 100px;
+  font-size: 25px;
+  margin: 15px 0;
+  padding: 5px;
 }
  #social-media{
    text-align: left;
@@ -157,16 +177,18 @@ cursor: pointer;
   padding:10px;
   width:auto;
 }
+
+
 .welcome-text{
   color: #086972;
   text-align: center;
-  font-size: 25px;
+  font-size: 40px;
   margin: 20px;
 }
 /*Ethos*/
 
 #ethos{
-  height: 500px;
+  height: 600px;
   width: 100%;
   background-color: #086972;
   color: white;
@@ -177,14 +199,28 @@ cursor: pointer;
 
 }
 
+#ethos h2, h3{
+  font-size: 40px;
+  padding: 20px;
+}
+
+#ethos p{
+  font-size: 30px;
+}
+
+#ethos li{
+  font-size: 30px;
+}
+
 #image-father{
  background: url("https://res.cloudinary.com/dwnm1wdkt/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1651035948/Project%201/pexels-rodnae-productions-6849611_rdfkwy.jpg") no-repeat center center;
  width: 30%;
-    height: 400px;
+    height: 500px;
     float: left;
     background-color: #086972;
-    padding: 20px 20px 0;
+    padding: 60px 30px 0;
 }
+
 
 
 /* Meet up schedule */
@@ -192,9 +228,9 @@ cursor: pointer;
 .weekly{
   text-align: center;
     background: #086972;
-    height: 40px;
+    height: 60px;
     color: white;
-    padding-top: 5px
+    padding-top: 10px;
 }
 #kids-blocks{ 
   background-image: url("https://res.cloudinary.com/dwnm1wdkt/image/upload/v1651011774/Project%201/pexels-skitterphoto-591652_gwdo5h.jpg");
@@ -205,16 +241,14 @@ cursor: pointer;
   overflow:hidden;
   z-index: -1;
   position: relative;
-  top: -350px;
+  top: -500px;
+
 }
 
-#time-table img{
-  width:100%;
-  height:500px;
-}
+
 #time-table{
   width:100%;
-  height:600px;
+  height:900px;
 
 }
 #time-table div{
@@ -223,14 +257,13 @@ cursor: pointer;
     padding: 20px 20px 20px 10px;
     display: inline;
     width: 25%;
-    height: 300px;
-    float: right;
+    height: 350px;
+    float: left;
     text-align: center;
     box-sizing: border-box;
     z-index: 1;
     position: relative;
-    margin-left: 0;
-    margin-right: 20px;
+    margin-left: 80px;
 }
 
 .fa-solid {
@@ -258,14 +291,18 @@ a:hover {
 #comments{
   background-color: #086972;
   margin-bottom: 50px;
+  height: 1000px;
 }
 #heading{
   text-align: center;
-  padding:5px;
-  font-size: 30px;
+  padding:20px;
   color:white;
 }
 
+#heading h2{
+font-size: 50px;
+
+}
 .testimonials{
 display: grid;
 height: 100%;
@@ -283,6 +320,7 @@ background: #086972;
   flex-wrap: wrap;
   align-items: stretch;
   justify-content: space-between;
+  font-size: 25px;
 }
 .wrapper .box{
   background: white;
@@ -292,7 +330,7 @@ background: #086972;
   
 }
 .wrapper .box i.quote{
-  font-size: 20px;
+  font-size: 30px;
   color: #086972;
 }
 .wrapper .box .content{
@@ -545,306 +583,4 @@ height: 25px;
 
 /* Media Query */
 
-
-/*For screens from 320px wide and up*/
-@media screen and (min-width: 320px) { 
-
-.nav-list{
-  width: 480px;
-}
-#video video {
-  margin-top: -20px;
- 
-}
-#quote{
-  width:450px;
-  padding: 0;
-}
-
-#logo{
-  height: 100px;
-  margin-top: 45px;
-}
-.welcome-text{
-font-size: 15px;
-}
-#image-father{
-  width: 300px;
-    height: 200px;
-    padding: 20px 100px 0;
-}
-#ethos img {
-  height: 300px;
-  width: 200px;
-}
-
-  
-#time-table h2 {
-  margin-top: 170px;
-}
-#time-table div {
-  width:100%;
-  margin-bottom: 10px;
-}
-#buggy h2{
-margin-top:30px;
-}
-#heading{
-  margin-top: 600px;
-  padding: 10px;
-}
-#tea h2{
-  margin-top:30px;
-}
-#softpaly h2{
-  margin-top:30px;
-
-}
-.wrapper{
-  margin-left: 20px;
-    width: 400px;
-}
-#contact-info {
-  margin: 20px 0;
-}
-footer{
-  height:600px;
-}
-
-#contact-list li{
-  text-align: left;
-  font-size: 12px;
-}
-#yoga{
-  margin-left: 0;
-  width: 300px;
-}
-#yoga p{
-  padding:10px;
-}
-#massage{
-  margin-left: -5px;
-  width: 300px;
-}
-#massage p{
-  padding:10px;
-
-}
-.container-massage{
-  height: 1000px;
-}
-.container-weaning{
-  margin-left: 0;
-}
- .container-weaning h4{
-  font-size: 15px;
-  width: 250px;
-  margin-left: -50px;
-
- }
-#weaning{
-  width:150px;
-  margin-left: 0;
-}
-#weaning h3{
-  margin-top: -30px
-}
-#video-weaning{
-  margin: -10px -50px ;
-width:250px;
-}
-.video-section {
-  height: 600px;
-}
-#contact-info{
-  font-size: 12px;
-}
-#contact-info h4{
-  font-size: 20px;
-}
-
-.sign-up-photo{
-  height: 60vh
-}
-#sign-up-form{
-  margin-top: -600px;
-}
-
-#name-field {
-  width: 260px;
-  
-}
-#email-field{
-  width: 260px;
-  
-}
-#message{
-  width: 260px;
-  
-}
-}
-/*For larger screens from 1380px wide and down*/
-@media screen and (max-width: 1380px) {
-
-  #logo{
-   margin-top: 10px;
-    width: 450px;
-    height: 350px;
-  }
-  
-    #video video {
-      margin-top: -310px;
-  }
-
-  #quote{
-    width: 100%;
-    margin-top: -200px;
-  }
-#quote h1{
-font-size: 50px;
- }
- 
- 
- 
- #time-table div{
-margin-bottom: 10px;
-width:300px;
-}
-
- 
-  } 
-
-/*For larger screens from 1140px wide and down*/
-@media screen and (max-width: 1140px) {
-
-
-  /* nav bar */
-
-  .checkbtn{
-    display: block;
-  }
-  ul{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #086972;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
-  }
-  nav ul li{
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  nav ul li a{
-    font-size: 20px;
-  }
-  a:hover,a.active{
-    background: none;
-    color: #086972;
-  }
-  #check:checked ~ ul{
-    left: 0;
-  }
-}
-
-  .wrapper .box{
-    width: calc(55% - 10px);
-    margin: 10px 0;
-  }
-  .wrapper .box{
-    width: calc(0 - 0);
-    margin: 10px 0;
-  }
-  .welcome-text{
-    font-size: 25px;
-  }
-
-
-  #ethos-img{
-    height: 500px;
-    width: 400px;
-    margin-left: -10px;
-
-  } 
-  
-
-
-/*For screens from 720px wide and down*/
-@media screen and (max-width: 720px) {
-
-  /* Nav bar */
-  .menu-button-container {
-    display: flex;
-  }
-  .menu {
-    position: absolute;
-    top: 0;
-    margin-top: 50px;
-    left: 0;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-
-
-
-  *{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-  }
-  nav{
-    background: white;
-    height: 80px;
-    width: 100%;
-  }
-
-  nav ul{
-    float: right;
-    margin-right: 20px;
-  }
-  nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-  }
-  nav ul li a{
-    color: #086972;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-  }
-  a.active,a:hover{
-    background: #1b9bff;
-    transition: .5s;
-  }
-  .checkbtn{
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-  }
-  #check{
-    display: none;
-  }
-
-#video{
-    margin-top: -100px;
-  }
-#logo{
-  margin-top: 150px; 
-}
-
-}
-/*For screens from 590px wide and down*/
 
