@@ -44,9 +44,6 @@ background: white;
 nav ul{
   float: right;
   margin-right: 20px;
-}
-nav ul li{
-  display: inline-block;
   line-height: 80px;
   margin: 0 5px;
   font-size: 30px;
@@ -54,28 +51,24 @@ nav ul li{
   padding-top:15px;
 
 }
+
+nav li{
+  display:inline;
+}
+
 nav ul li a{
   color: #086972; 
   padding: 7px 13px;
   border-radius: 3px;
   text-transform: uppercase;
   text-decoration: none;
+  
+ 
 }
+
 a:hover{
   background: #086972;
   transition: .5s;
-}
-.checkbtn{
-  font-size: 30px;
-  color: white;
-  float: left;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
-#check{
-  display: none;
 }
 
  /*footer*/
@@ -103,7 +96,7 @@ margin-right:50px
   float:left;
  }
 
- ul{
+ #contact-info ul{
    list-style-type: none;
 
  }
@@ -212,7 +205,9 @@ color: #086972;
 
 #ethos li{
   font-size: 30px;
+  
 }
+
 
 #image-father{
  background: url("https://res.cloudinary.com/dwnm1wdkt/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1651035948/Project%201/pexels-rodnae-productions-6849611_rdfkwy.jpg") no-repeat center center;
@@ -227,7 +222,7 @@ color: #086972;
 
 /* Meet up schedule */
 
-.weekly{
+#weekly{
   text-align: center;
     background: #086972;
     height: 60px;
@@ -627,4 +622,105 @@ label{
 
 /* Media Query */
 
+/*For larger screens from 1380px wide and down*/
+@media screen and (max-width: 1380px) {
 
+  #ethos {
+    height: 700px;
+
+}
+#image-father {
+  height: 600px;
+  padding: 90px 30px 0;
+}
+
+}
+
+/*For larger screens from 1024px wide and down*/
+@media screen and (max-width: 1024px) {
+
+  nav ul li a{
+font-size: 25px;
+padding: 7px;
+}
+
+#video {
+  height: 600px;
+}
+
+#image-father{
+  width: 40%;
+  height: 650px;
+}
+#ethos{
+height: 800px
+}
+
+#ethos p {
+  font-size: 25px;
+  padding: 0 10px;
+}
+
+#ethos li {
+  font-size: 25px;
+
+}
+
+#ethos img{
+  margin-top: -60px;
+}
+
+#ethos h3 {
+  font-size: 35px;
+}
+
+#weekly{
+  padding: 15px;
+}
+#time-table{
+  height: 680px;
+}
+
+#time-table h2, h3 {
+  font-size: 20px;
+}
+#time-table div {
+  height: 280px;
+}
+#kids-blocks{
+  top: -400px;
+}
+
+#comments{
+  height: 1100px;
+}
+
+footer {
+  height: 900px;
+}
+
+#contact-info {
+padding: 0;
+ text-align: center;
+ float:unset;
+}
+#contact-us{
+float: unset;
+text-align: center;
+}
+#email-field {
+  width: 500px;
+}
+
+#button {
+  margin-right: 410px
+
+}
+
+#contact-us h3{
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+
+}
