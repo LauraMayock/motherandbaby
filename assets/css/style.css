@@ -18,21 +18,18 @@ h2 {
 
 video{
     width: 100vw;
-   
+    margin-top:15px;
 }
 #video {
   height: 800px;
   width: 100%;
-  z-index: -1;
-  position: relative;
-  overflow: hidden;
+ 
+  
 }
 
 #logo{
-    position: relative;
-    border-radius: 0% 0% 45% 67% / 100% 71% 50% 0%;
-    z-index: 2;
-    width: 40%;
+    width: 30%;
+  
   }
 
   /*Navigation links*/
@@ -51,8 +48,9 @@ nav ul li{
   display: inline-block;
   line-height: 80px;
   margin: 0 5px;
-  font-size: 25px;
+  font-size: 30px;
   font-weight:700;
+  padding-top:15px;
 
 }
 nav ul li a{
