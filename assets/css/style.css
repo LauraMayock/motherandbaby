@@ -35,12 +35,59 @@ video{
 
   /*Navigation links*/
 
-nav{
-background: white;
-  height: 80px;
-  width: 100%;
-
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #086972;
+  position: relative;
 }
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+
+nav{
+  background: white;
+    height: 80px;
+    width: 100%;
+  
+  }
+.topnav a.icon {
+  background: #086972;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color:#086972;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #086972;
+  color: white;
+}
+
+
+
+
+/*
 nav ul{
   float: right;
   margin-right: 20px;
@@ -756,12 +803,15 @@ height: 1000px;
 }
 }
 /*For tablet screens from 768px wide and down*/
-@media screen and (max-width: 1024px) {
-
+@media screen and (max-width: 768px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
 
 }
 
-
+}
 
 
 
@@ -772,7 +822,135 @@ height: 1000px;
 
 
 /*For small phone screens from 320px wide and down*/
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px, max-width:425px) {
 
+  #logo {
+    width: 150px;
+}
+video{
+  margin-top: 0;
+}
+
+#video {
+  height: 150px;
+}
+
+.welcome-text {
+  font-size: 20px;
+  margin: 10px;
+}
+
+nav ul li a {
+  font-size: 18px;
+}
+
+#ethos img {
+  height: 200px;
+  width: 200px;
+  margin-left: 30px;
+}
+
+#image-father {
+  width: 40%;
+}
+#image-father {
+  height: 160px;
 
 }
+
+#ethos h2{
+  font-size: 25px;
+}
+
+
+#ethos p {
+  font-size: 20px;
+}
+
+#ethos h3{
+  font-size: 25px;
+
+}
+#ethos li {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+#ethos {
+  height: 1000px;
+  padding: 20px;
+  line-height: 1.2;
+}
+#ethos ul{
+    list-style: square;
+}
+
+#time-table {
+  height: 1200px;
+}
+
+#kids-blocks{
+  height: 100vw;
+}
+
+
+#time-table div {
+    margin: 0;
+    width: 100vw;
+}
+#buggy{
+  border: 10px solid white;
+}
+
+#tea{
+  border: 10px solid white;
+}
+
+#softplay{
+  border: 10px solid white;
+}
+.wrapper .box {
+  width: 100vw;
+
+}
+#comments {
+  height: 1550px;
+}
+
+#comments-extra{
+  display: none;
+}
+
+#contact-info {
+  font-size: 15px;
+}
+
+#contact-us{
+  padding: 0;
+}
+#contact-us h3 {
+  font-size: 20px;
+  padding: 0;
+  margin: 0 0 30px;
+
+}
+#form{
+  margin-top: 60px;
+    padding: 20px;
+}
+
+label {
+  font-size: 25px;
+  margin-right: 200px;
+}
+#name-field {
+  width: 280px;
+  font-size: 15px;
+
+}
+#email-field{
+margin-right: 200px
+}
+
+
+
