@@ -269,6 +269,7 @@ color: #086972;
   text-align: center;
     background: #086972;
     height: 60px;
+    width: 100%;
     color: white;
     padding-top: 10px;
     margin: 20px;
@@ -639,7 +640,15 @@ label{
   height: 600px;
   padding: 90px 30px 0;
 }
-
+#video{
+  height:800px;
+}
+#time-table div{
+  height: 460px
+}
+footer{
+height: 650px;
+}
 }
 
 /*For larger screens from 1024px wide and down*/
@@ -651,7 +660,8 @@ padding: 7px;
 }
 
 #menu{
-  width: 800px
+  width: 800px;
+  padding-left: 130px;
 }
 #menu >a{
   font-size: 25px;
@@ -810,7 +820,21 @@ height: 1000px;
   #menu > a:not(:last-child) {
     border-bottom: 1px solid #444;
   }
+
+#video{
+  height: 250px;
 }
+
+.welcome-text{
+height: 30px;
+font-size: 30px;
+padding: 10px 0
+}
+
+}
+
+
+
 
 
 
