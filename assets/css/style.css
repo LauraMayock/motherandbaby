@@ -29,126 +29,89 @@ video{
 }
 
 #logo{
-    width: 30%;
+  width: 300px;
+  margin-top: 10px;
   
   }
 
   /*Navigation links*/
-  .top-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #086972;
-    color: white;
-    height: 50px;
-    padding: 1em;
-  }
   
-  .menu {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .menu > a {
-    margin: 0 1rem;
-    overflow: hidden;
-    font-size: 30px;
-  }
-  
-  .menu-button-container {
-    display: none;
-    height: 100%;
-    width: 30px;
-    cursor: pointer;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #menu-toggle {
-    display: none;
-  }
-  
-  .menu-button,
-  .menu-button::before,
-  .menu-button::after {
-    display: block;
-    background-color: white;
-    position: absolute;
-    height: 4px;
-    width: 30px;
-    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    border-radius: 2px;
-  }
-  
-  .menu-button::before {
-    content: '';
-    margin-top: -8px;
-  }
-  
-  .menu-button::after {
-    content: '';
-    margin-top: 8px;
-  }
-  
-  #menu-toggle:checked + .menu-button-container .menu-button::before {
-    margin-top: 0px;
-    transform: rotate(405deg);
-  }
-  
-  #menu-toggle:checked + .menu-button-container .menu-button {
-    background:#086972;
-  }
-  
-  #menu-toggle:checked + .menu-button-container .menu-button::after {
-    margin-top: 0px;
-    transform: rotate(-405deg);
-  }
-  
-  @media (max-width: 700px) {
-    .menu-button-container {
-      display: flex;
-    }
-    .menu {
-      position: absolute;
-      top: 0;
-      margin-top: 50px;
-      left: 0;
-      flex-direction: column;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-    }
-    #menu-toggle ~ .menu a {
-      height: 0;
-      margin: 0;
-      padding: 0;
-      border: 0;
-      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    }
-    #menu-toggle:checked ~ .menu a {
-      border: 1px solid #333;
-      height: 2.5em;
-      padding: 0.5em;
-      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    }
-    .menu > a {
-      display: flex;
-      justify-content: center;
-      margin: 0;
-      padding: 0.5em 0;
-      width: 100%;
-      color: #086972;
-      background-color:white;
-    }
-    .menu > a:not(:last-child) {
-      border-bottom: 1px solid #444;
-    }
-  }
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color:white;
+  color: #086972;
+  height: 50px;
+  padding: 1em;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  font-size: 30px;
+  padding-left: 100px
+}
+
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+ 
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #086972;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
 
 
  /*footer*/
@@ -213,7 +176,6 @@ input{
   text-align: left;
   font-size: 25px;
   padding: 5px;
-  
 }
 #button{
 padding: 10px;
@@ -249,8 +211,7 @@ color: #086972;
 /*body welcome page*/
 #quote{
   width:auto;
-  margin-top: 40px;
-
+    padding-bottom: 10px;
 }
 
 
@@ -335,7 +296,7 @@ color: #086972;
     padding: 20px 20px 20px 10px;
     display: inline;
     width: 25%;
-    height: 350px;
+    height: 400px;
     float: left;
     text-align: center;
     box-sizing: border-box;
@@ -355,8 +316,9 @@ padding-top:10px;
 #time-table h2{
   padding-bottom:8px;
 }
-a{
-  color:white;
+/* #time-table a{
+  color: white;
+  font-size: 20px;
 }
 
 /* mouse over link */
@@ -460,7 +422,6 @@ background: #086972;
 /* Yoga mom Gallary */
 
 #container-yoga {
-  margin-top: 50px;
   text-align: center;
   background: #086972;
   color: white;
@@ -582,7 +543,7 @@ font-weight:700;
 
 #form-section{
   width:100vw;
-  height:1000px;
+  height: 900px;
 
 }
 
@@ -590,18 +551,18 @@ font-weight:700;
 background: url("https://res.cloudinary.com/dwnm1wdkt/image/upload/v1651264272/Project%201/pexels-tatiana-syrikova-3933250-min_l71ezs.jpg");
 background-size:cover;
 background-position: center;
+
 width: 100vw;
-height: 100vh;
+height: 900px
 }
 
 #sign-up-form{
   color: white;
-  background: color #ffdfc4;
   max-width: 400px;
   position:absolute;
   text-align: left;
   padding: 30px;
-  margin-top: -1000px;
+  margin-top: -850px;
   font-weight: 700;
   line-height: 1.5;
 }
@@ -672,10 +633,10 @@ label{
   border-radius: 2px;
   text-align: center;
   font-size: 100%;
-  background-color: white;
-  color: #086972;
+  background-color:white;
+ 
   display: block;
-
+  width: 200px;
 }
 
 #submit-button:hover{
@@ -724,6 +685,12 @@ font-size: 25px;
 padding: 7px;
 }
 
+.menu{
+  width: 800px
+}
+.menu >a{
+  font-size: 25px;
+}
 #video {
   height: 600px;
 }
@@ -817,7 +784,9 @@ text-align: center;
   margin-left: 120px;
   padding: 30px 20px;
 }
-
+.container-weaning{
+  margin-left: 0;
+}
 #weaning{
   padding: 20px;
   margin-left: 120px
@@ -836,14 +805,46 @@ height: 1000px;
 }
 }
 /*For tablet screens from 768px wide and down*/
-@media screen and (max-width: 768px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-
-}
-
+@media (max-width: 768px) {
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color:white ;
+    background-color: white;
+    align-items: right;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
 }
 
 
@@ -854,11 +855,12 @@ height: 1000px;
 
 
 
-/*For small phone screens from 320px wide and down*/
-@media screen and (min-width: 320px, max-width:425px) {
+/*For small phone screens from 425px wide and down*/
+@media screen and (max-width: 425px) {
 
   #logo {
-    width: 150px;
+    width:170px;
+
 }
 video{
   margin-top: 0;
@@ -876,28 +878,27 @@ video{
 nav ul li a {
   font-size: 18px;
 }
-
+.menu-button{
+  margin-left: 200px;
+}
 #ethos img {
-  height: 200px;
-  width: 200px;
-  margin-left: 30px;
+  height: 250px;
+    width: 250px;
+  margin-right: 40px;
 }
 
 #image-father {
+  height: 210px;
   width: 40%;
-}
-#image-father {
-  height: 160px;
-
 }
 
 #ethos h2{
   font-size: 25px;
 }
 
-
 #ethos p {
   font-size: 20px;
+    padding: 0 10px;
 }
 
 #ethos h3{
@@ -905,31 +906,38 @@ nav ul li a {
 
 }
 #ethos li {
+  padding: 0 10px 10px;
   font-size: 20px;
-  padding-bottom: 10px;
 }
 
 #ethos {
-  height: 1000px;
-  padding: 20px;
+  height: 1150px;
   line-height: 1.2;
 }
 #ethos ul{
     list-style: square;
 }
+#weekly h2{
+  font-size: 25px;
+}
+
 
 #time-table {
-  height: 1200px;
+  height: 1120px;
 }
 
 #kids-blocks{
-  height: 100vw;
+  height: 300px;
+width:100vw;
+margin-top: 200px;
 }
 
 
 #time-table div {
     margin: 0;
     width: 100vw;
+    padding-top: 1px;
+    height: 300px;
 }
 #buggy{
   border: 10px solid white;
@@ -944,10 +952,11 @@ nav ul li a {
 }
 .wrapper .box {
   width: 100vw;
-
+  font-size: 20px;
 }
+
 #comments {
-  height: 1550px;
+  height: 2300px;
 }
 
 
@@ -980,8 +989,22 @@ label {
 
 }
 #email-field{
-margin-right: 200px
+  width: 280px;
+  font-size: 15px;
+}
+
+#message{
+  width: 280px;
+  font-size: 15px;
+}
+#button{
+  font-size: 20px;
+}
+
+footer {
+  height: 900px;
 }
 
 
+}
 
