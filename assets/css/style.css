@@ -56,10 +56,12 @@ video{
   padding-left: 100px
 }
 
-#menu > a {
+#menu >a {
   margin: 0 1rem;
   overflow: hidden;
- 
+  color: #086972;
+    text-decoration: none;
+ font-weight: 700;
 }
 
 .menu-button-container {
@@ -287,7 +289,7 @@ color: #086972;
 
 #time-table{
   width:100%;
-  height:900px;
+  height: 950px
 
 }
 #time-table div{
@@ -316,9 +318,10 @@ padding-top:10px;
 #time-table h2{
   padding-bottom:8px;
 }
-/* #time-table a{
-  color: white;
-  font-size: 20px;
+#time-table a{
+  font-size: 25px;
+  color:white;
+  
 }
 
 /* mouse over link */
@@ -328,90 +331,52 @@ a:hover {
 }
 
 /* Testimonial section*/
-#comments{
+
+#our-parents{
+  margin-top: 50px;
+}
+
+#our-parents h2{
+text-align: center;
+font-size: 60px;
+}
+
+/* Style the container with a rounded border, grey background and some padding and margin */
+.container {
   background-color: #086972;
-  margin-bottom: 50px;
-  height: 1000px;
-}
-#heading{
-  text-align: center;
-  padding:20px;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
   color:white;
-}
-
-#heading h2{
-font-size: 50px;
-
-}
-.testimonials{
-display: grid;
-height: 100%;
-place-items: center;
-background: #086972;
-}
-::selection{
-  background: #086972;
-}
-.wrapper{
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 10px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  justify-content: space-between;
   font-size: 25px;
 }
-.wrapper .box{
-  background: white;
-  width: calc(29% - 10px);
-  padding: 20px;
-  margin-top:10px;
-  
+
+/* Clear floats after containers */
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
 }
-.wrapper .box i.quote{
-  font-size: 30px;
-  color: #086972;
-}
-.wrapper .box .content{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 10px;
-}
-.box .info .name{
-  font-weight: 600;
-  font-size: 17px;
-}
-.box .info .job{
-  font-size: 16px;
-  font-weight: 500;
-  color: #086972;
-}
-.box .info .stars{
-  margin-top: 2px;
-}
-.box .info .stars i{
-  color: #086972;
-}
-.box .content .image{
-  height: 75px;
-  width: 75px;
-  padding: 3px;
-  background:#086972;
+
+/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+.container img {
+  float: left;
+  margin-right: 20px;
   border-radius: 50%;
+  width: 90px;
+  height:90px;
 }
-.content .image img{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 2px solid white;
+
+/* Increase the font-size of a span element */
+.container span {
+  font-size: 35px;
+  margin-right: 15px;
 }
-.box:hover .content .image img{
-  border-color: white;
+
+.container p{
+margin-left: 110px;
 }
+
 
 
 /*Events sections */
@@ -853,6 +818,18 @@ height: 1000px;
 @media screen and (max-width: 1024px) {
 }
 
+/* Add media queries for responsiveness. This will center both the text and the image inside the container */
+@media (max-width: 500px) {
+  .container {
+    text-align: center;
+  }
+
+  .container img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}
 
 
 /*For small phone screens from 425px wide and down*/
@@ -867,7 +844,7 @@ video{
 }
 
 #video {
-  height: 150px;
+  height: 200px;
 }
 
 .welcome-text {
