@@ -47,7 +47,7 @@ video{
   padding: 1em;
 }
 
-.menu {
+#menu {
   display: flex;
   flex-direction: row;
   list-style-type: none;
@@ -56,7 +56,7 @@ video{
   padding-left: 100px
 }
 
-.menu > li {
+#menu > a {
   margin: 0 1rem;
   overflow: hidden;
  
@@ -76,9 +76,9 @@ video{
   display: none;
 }
 
-.menu-button,
-.menu-button::before,
-.menu-button::after {
+#menu-button,
+#menu-button::before,
+#menu-button::after {
   display: block;
   background-color: #086972;
   position: absolute;
@@ -88,26 +88,26 @@ video{
   border-radius: 2px;
 }
 
-.menu-button::before {
+#menu-button::before {
   content: '';
   margin-top: -8px;
 }
 
-.menu-button::after {
+#menu-button::after {
   content: '';
   margin-top: 8px;
 }
 
-#menu-toggle:checked + .menu-button-container .menu-button::before {
+#menu-toggle:checked + #menu-button-container #menu-button::before {
   margin-top: 0px;
   transform: rotate(405deg);
 }
 
-#menu-toggle:checked + .menu-button-container .menu-button {
+#menu-toggle:checked + #menu-button-container #menu-button {
   background: rgba(255, 255, 255, 0);
 }
 
-#menu-toggle:checked + .menu-button-container .menu-button::after {
+#menu-toggle:checked + #menu-button-container #menu-button::after {
   margin-top: 0px;
   transform: rotate(-405deg);
 }
@@ -680,15 +680,15 @@ label{
 /*For larger screens from 1024px wide and down*/
 @media screen and (max-width: 1024px) {
 
-  nav ul li a{
+  nav a{
 font-size: 25px;
 padding: 7px;
 }
 
-.menu{
+#menu{
   width: 800px
 }
-.menu >a{
+#menu >a{
   font-size: 25px;
 }
 #video {
@@ -809,7 +809,7 @@ height: 1000px;
   .menu-button-container {
     display: flex;
   }
-  .menu {
+  #menu {
     position: absolute;
     top: 0;
     margin-top: 50px;
@@ -819,20 +819,20 @@ height: 1000px;
     justify-content: center;
     align-items: center;
   }
-  #menu-toggle ~ .menu li {
+  #menu-toggle ~ #menu a {
     height: 0;
     margin: 0;
     padding: 0;
     border: 0;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
-  #menu-toggle:checked ~ .menu li {
+  #menu-toggle:checked ~ #menu a{
     border: 1px solid #333;
     height: 2.5em;
     padding: 0.5em;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
-  .menu > li {
+  #menu > a {
     display: flex;
     justify-content: center;
     margin: 0;
@@ -842,7 +842,7 @@ height: 1000px;
     background-color: white;
     align-items: right;
   }
-  .menu > li:not(:last-child) {
+  #menu > a:not(:last-child) {
     border-bottom: 1px solid #444;
   }
 }
@@ -878,7 +878,7 @@ video{
 nav ul li a {
   font-size: 18px;
 }
-.menu-button{
+#menu-button{
   margin-left: 200px;
 }
 #ethos img {
