@@ -60,7 +60,7 @@ video{
   margin: 0 1rem;
   overflow: hidden;
   color: #086972;
-    text-decoration: none;
+  text-decoration: none;
  font-weight: 700;
 }
 
@@ -179,7 +179,7 @@ input{
   font-size: 25px;
   padding: 5px;
 }
-#button{
+#label{
 padding: 10px;
 text-decoration: none;
 margin: 4px 2px;
@@ -188,7 +188,7 @@ font-size: 25px;
 color: #086972;
 }
 
-#button:hover{
+#label:hover{
   border: 2px solid #086972;
 }
 #message{
@@ -783,17 +783,20 @@ height: 1000px;
 @media (max-width: 768px) {
   .menu-button-container {
     display: flex;
+    
   }
   #menu {
     position: absolute;
     top: 0;
-    margin-top: 50px;
+    margin: 90px 350px 0 0;
     left: 0;
     flex-direction: column;
-    width: 100%;
+    width:300px;
     justify-content: center;
     align-items: center;
+    
   }
+
   #menu-toggle ~ #menu a {
     height: 0;
     margin: 0;
@@ -806,6 +809,9 @@ height: 1000px;
     height: 2.5em;
     padding: 0.5em;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    color:#086972;
+    align-items: center;
+   
   }
   #menu > a {
     display: flex;
@@ -827,19 +833,54 @@ height: 1000px;
 
 .welcome-text{
 height: 30px;
-font-size: 30px;
-padding: 10px 0
+font-size: 25px;
+padding: 0
 }
 
+#image-father {
+  height: 320px;
+  width: 400px;
 }
 
+#ethos img {
+  height: 350px;
+  width: 350px;
+  margin: -60px 0 0 10px;
+}
+
+#ethos{
+height:1000px;
+
+}
+#ethos h2 {
+  font-size: 25px;
+}
+
+#ethos h3 {
+  font-size: 25px;
+}
+#ethos p {
+  font-size: 20px;
+
+}
+#ethos ul{
+  list-style-type: square;
+}
+#ethos li {
+  font-size: 20px;
+  padding: 0 0 0 10px;
+ 
+}
+
+#time-table div {
+  width: 100%;
 
 
 
-
+}
 
 /*For tablet screens from 768px wide and down*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: ) {
 }
 
 /* Add media queries for responsiveness. This will center both the text and the image inside the container */
@@ -889,7 +930,7 @@ nav ul li a {
 }
 
 #image-father {
-  height: 210px;
+  height: 350px;
   width: 40%;
 }
 
@@ -980,7 +1021,7 @@ margin-top: 200px;
     padding: 20px;
 }
 
-label {
+button {
   font-size: 25px;
   margin-right: 200px;
 }
@@ -1005,7 +1046,31 @@ label {
 footer {
   height: 900px;
 }
+#time-table div {
+  margin: 0;
+  width: 100vw;
+  padding-top: 1px;
+  height: 300px;
+}
+#buggy{
+border: 10px solid white;
+}
 
+#tea{
+border: 10px solid white;
+}
+
+#softplay{
+border: 10px solid white;
+}
+.wrapper .box {
+width: 100vw;
+font-size: 20px;
+}
+
+#comments {
+height: 2300px;
+}
 
 }
 
