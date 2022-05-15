@@ -38,13 +38,13 @@ font-weight: 700;
 }
 
 #logo{
-  width: 350px;
+  width: 300px;
 }
 
 /*hero image/video */
 
 video{
-    width: 100vw;
+    width: 1000px;
 }
 
  /*footer*/
@@ -224,44 +224,17 @@ text-align: center;
 .events{
   text-decoration: underline;
 }
-/* Yoga mom Gallary */
+/* Yoga mom Advertisment */
 
-#container-yoga {
-  text-align: center;
-  background: #086972;
-  color: white;
-  padding:10px;
-  width: 100vw;
+#yoga{
+padding: 30px 0;
+text-align: center;
 }
-#yoga-advertisment h4{
-  font-size: 25px;
-}
-
-#yoga-advertisment p{
-  font-size:20px;
-}
-    #yoga{
-      margin-left: 250px;
-      margin-top: 100px;
-      padding: 30px 0;
-      text-align: center;
-      background: white;
-      color: #086972;
-      width: 70%;
-    }
     
-    
-#container div {
-flex: 0 32%;
-height: 100px;
-margin-bottom: 2px;
-justify-content: space-between;
-}
-
-
+/*yoga images */
 .item{
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
   margin: 5px;
 }
 
@@ -275,80 +248,29 @@ font-weight:700;
   background-color: #086972;
   color: white;
 }
+
+/*massage advertisment */
 #massage{
-  margin-left: 200px;
-    padding: 30px 0;
-    text-align: center;
-    background: white;
-    color: #086972;
-    width: 77%;
+  margin: 100px 0;
+  text-align: center;  
 }
 
-#container-massage div {
-  flex: 0 32%;
-  height: 100px;
-  margin-bottom: 2px;
-  justify-content: space-between;
-  width: 100vw;
-  }
-  
-.container-massage{
-  height: 35rem;
-  padding: 5%;
-  color:white;
-  background-color:#086972;
-  }
 
-#massage-advertisment h4{
-  font-size: 25px;
+/* Weaning advertisment */
+     
+#weaning{
+  margin: 100px 0;
+  text-align: center;  
 }
-
-#massage-advertisment p{
-  font-size: 20px;
-}
-
-  /* Weaning event */
-
-  .container-weaning{
-    height: 45rem;
-    padding: 5%;
-    color:white;
-    background-color:#086972;
-    margin-left: 200px;
-    margin-top: -40px;
-    padding-top: 30px;
-    width: 100vw
-    }
-  
-    #weaning{
-      width: 70%;
-      text-align: center;
-      color: #086972;
-      padding-top: 10px;
-      background-color: white;
-    }
-
-    .video-section{
-      height: 650px;
-      background-color: #086972;
-    
-    }
 #video-weaning{
   height: 300px;
   width: 500px;
 }
-  #weaning-advertisment{
-    font-size: 25px;
-  }  
-
-  #weaning-advertisment{
-    font-size:20px;
-  }
 /* Pre-booking form */
 
 #form-section{
   width:100vw;
-  height: 900px;
+  height: 650px;
 
 }
 
@@ -356,64 +278,49 @@ font-weight:700;
 background: url("https://res.cloudinary.com/dwnm1wdkt/image/upload/v1651264272/Project%201/pexels-tatiana-syrikova-3933250-min_l71ezs.jpg");
 background-size:cover;
 background-position: center;
-
-width: 100vw;
-height: 900px
+width: 800px;
+height: 650px;
+margin-left: 200px;
 }
 
-#sign-up-form{
+
+#sign-up-form {
   color: white;
-  max-width: 400px;
-  position:absolute;
-  text-align: left;
-  padding: 30px;
-  margin-top: -850px;
-  font-weight: 700;
-  line-height: 1.5;
+    max-width: 400px;
+    position: absolute;
+    text-align: left;
+    padding: 30px;
+    height: 590px;
+    margin-top: -650px;
+    font-weight: 700;
+    line-height: 1.5;
+    background-color: #086972;
+    border-bottom: 2px solid white;
 }
 
-#name-fields{
+
+.fieldset input{
   width:100%;
   height:30px;
-}
+    display: inline-block;
+    text-align: left;
+    font-size: 25px;
+    padding: 5px;
+  }
 
-#email-field{
-  width:100%;
-  height:30px;
-}
-#babys-name-field{
-  width:100%;
-  height:30px;
 
+#baby-age {
+  margin: 10px 0;
+  font-size: 25px;
+  color: grey;
 }
+/*heading */
 
-#babys-age{
-  font-size: 30px;
-  padding: 5px;
-  color: gray;
-
-}
-#form-secction input{
-width:100%;
-height: 30px;
-
-}
- legend{
-   text-decoration: underline;
-   font-size: 40px;
+legend{
+   font-size: 30px;
  }
 #course-choice{
   padding: 10px;
- 
-}
-.block-label{
-  display:block;
-
-}
-
-label{
-  font-size: 30px;
-  padding: 5px;
 }
 
 /* style the radio button */
@@ -425,107 +332,67 @@ label{
 #baby-massage{
   width:25px;
   height: 25px;
-
 }
 
 #whats-app-group{
   width:25px;
   height: 25px;
 }
-#submit-button{
-  margin-top:20px;
+
+/*submit button*/
+#submit-button input{
+  margin-top: 20px;
   padding: 10px;
-  border-radius: 2px;
   text-align: center;
-  font-size: 100%;
-  background-color:white;
- 
-  display: block;
-  width: 200px;
+  background-color: white;
+  width: 120px;
+  color: #086072;
 }
 
 #submit-button:hover{
   background-color: #086972;
   color: white;
 }
-/* link to pre-booking form */
 
-.container-massage a{
-  color:#086972;
-  font-weight: 700;
-  
-}
-.container a{
-  color:#086972;
-  font-weight: 700;
-}
-#form-photo img{
-  height:100%;
-  width:100%;
-  align-items: right;
-}
+/*contact us page */
 
 
-   #contact-us{
-    float: right;
-    font-size: 25px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    line-height: 20px;
-   }
-  
-   #contact-us h3{
-    margin: 10px 200px 30px 0px;
-     }
-   
-  #name-field{
-    width: 500px;
-    height: 30px;
-    font-size: 25px;
-    margin: 15px 0;
-    padding: 5px;
-  }
-  
-  #email-field{
-    width: 300px;
-    height: 30px;
-    font-size: 25px;
-    margin: 15px 0;
-    padding: 5px;
-  }
-  
-  input{
-    display: inline-block;
-    text-align: left;
-    font-size: 25px;
-    padding: 5px;
-  }
-  #label{
-  padding: 10px;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;
-  font-size: 25px;
-  color: #086972;
-  }
-  
-  #label:hover{
-    border: 2px solid #086972;
-  }
-  #message{
-    width: 500px;
-    height: 100px;
-    font-size: 25px;
-    margin: 15px 0;
-    padding: 5px;
-  }
-  
-  
+/* Contact us Form */
+#contact-us{
+background-color: #086972;
+width:1000px;
+color: white;
+}
+
+#form{
+  margin: 0 30px 20px;
+  height: 350px;
+}
+
+#form input{
+  width:200px;
+  height: 25px;
+}
+
+#message{
+width:200px;
+}
+
+#form #button{
+width:100px;
+color:#086972;
+
+}
+
+#form #button:hover{
+  color:white;
+  background-color: #086972;
+}
  /* Media Query */
 
 
 /*For larger screens from 1024px wide and down*/
-@media screen 
+/*@media screen 
   and (max-device-width: 1024px) 
   and (min-device-width: 769px) {
   
@@ -644,7 +511,7 @@ height: 1000px;
 }
 
 /*For small phone screens from 640px wide to 768px*/
-@media screen 
+/*@media screen 
   and (max-device-width: 768px) 
   and (min-device-width: 640px) {
  
@@ -658,7 +525,7 @@ height: 1000px;
 
 
 /*For small phone screens from 360px wide to 639px*/
-@media screen 
+/*@media screen 
   and (min-device-width: 360px)
   and (max-device-width: 639px) {
 
@@ -754,8 +621,8 @@ margin-top: 300px;
 
 
 
-/*
-#comments {
+
+/*#comments {
   height: 2300px;
 }
 
@@ -790,8 +657,4 @@ margin-top: 300px;
 #message{
   width: 280px;
   font-size: 15px;
-}
-
-
-
 }
