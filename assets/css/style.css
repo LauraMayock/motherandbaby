@@ -407,16 +407,33 @@ color:#086972;
 
 .events{
   text-align: center;
+  
 }
 
-/* Yoga Advertisment */
+/* Pre-booking form */
 
-#yoga{
- 
-  padding: 30px;
-  text-align: center;
+#form-section {
+  width: 640px
 }
-  }
+
+/* Amend placement of form */
+
+#sign-up-form{
+max-width: 640px;
+    position: relative;
+
+}
+/* Re-size and amend placing on image */
+.sign-up-photo{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 1;
+    margin: 350px 400px 0;
+}
+
+
+
 
 /*For small phone screens from 640px wide to 768px*/
 @media screen 
@@ -424,7 +441,7 @@ color:#086972;
   and (min-device-width: 640px) {
  
 
-/* Realign nav-bar */
+/* Re-align nav-bar */
 .top-nav{
 flex-direction: column;  
 }
@@ -445,25 +462,55 @@ video{
 #ethos{
   width: 560px;
     margin: 0;
-    height: 900px;
+    height: 900px
 }
 
 /* Resize kids blocks image */
 #kids-blocks{
-  width:640px;
+  width:630px;
+  margin-top: 140px;
 }
 
 /* Restyle and size meet ups on timetable */
 #time-table div{
   margin: 0;
   width: 640px;
-  border: 10px solid white;
+  border-bottom: 10px solid white;
 }
 
+/* Re-aligning testimonial section so that the #kids-blocks image is showing */
 
+#our-parents{
+  margin-top: 820px;
+}
 
+#contact-info li, p{
+font-size: 20px;
+}
 
   }
+/* Events page */
+
+
+/* Restyle events heading */
+
+.events{
+  text-align: center;
+  padding-top: 40px;
+  }
+
+  /* yoga advertisment */
+
+  /*Resize yoga images */
+  .item {
+    width: 150px;
+    height: 150px;
+  }
+
+#adds{
+  text-align: center;
+}
+
 
 
 /*For small phone screens from 360px wide to 639px*/
