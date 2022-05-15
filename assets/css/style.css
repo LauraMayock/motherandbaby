@@ -3,6 +3,7 @@
 body{
   font-family: Comfortaa, Arial, sans-serif; 
   color: #086972;
+  font-size: 20px;
 }
 
 *{
@@ -11,193 +12,98 @@ body{
     border: 0;
 }
 
-h2 {
-  font-size: 40px;
+h2 h3 {
+  font-size: 30px;
 }
 
+/*Navigation links*/
+
+.top-nav {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  font-size: 30px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.menu >a {
+margin: 0 1rem;
+overflow: hidden;
+color: #086972;
+text-decoration: none;
+font-weight: 700;
+}
+
+#logo{
+  width: 350px;
+}
 
 /*hero image/video */
 
 video{
     width: 100vw;
-    margin-top:15px;
 }
-#video {
-  height: 850px;
-  width: 100%;
- 
-}
-
-#logo{
-  width: 360px;
-  margin-top: 10px;
-  
-  }
-
-  /*Navigation links*/
-
-.top-nav {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  margin: 0;
-  font-size: 30px;
-  padding-left: 100px;
-  
-}
-
-
-.menu >a {
-  margin: 0 1rem;
-  overflow: hidden;
-  color: #086972;
-  text-decoration: none;
- font-weight: 700;
-}
-
-
-
 
  /*footer*/
 
  footer{
-   height:170px;
+   height:250px;
    color: white;
    background-color: #086972;
  }
-
-#contact{
-font-family: Patua One, Times New Roman, sans-serif;
-margin-left: 10px;
-padding-left: 1%;
-
+ /*colour of social media icons */
+ .fa-brands{
+  color:white;
  }
 
+ /*styling of footer*/
+  #contact-info{
+    font-family: Patua One, Times New Roman, sans-serif;
+    text-align: center;
+    font-size: 25px;
+     }
+    
+     #contact-info ul{
+       list-style-type: none;
+     }
 
- #contact-info{
-  font-size: 15px;
-  text-align: center;
- }
-
- #contact-info ul{
-   list-style-type: none;
-
- }
- #contact-us{
-  float: right;
-  font-size: 25px;
-  padding: 12px 20px;
-  box-sizing: border-box;
-  line-height: 20px;
- }
-
- #contact-us h3{
-  margin: 10px 200px 30px 0px;
-   }
- 
-#name-field{
-  width: 500px;
-  height: 30px;
-  font-size: 25px;
-  margin: 15px 0;
-  padding: 5px;
-}
-
-#email-field{
-  width: 300px;
-  height: 30px;
-  font-size: 25px;
-  margin: 15px 0;
-  padding: 5px;
-}
-
-input{
-  display: inline-block;
-  text-align: left;
-  font-size: 25px;
-  padding: 5px;
-}
-#label{
-padding: 10px;
-text-decoration: none;
-margin: 4px 2px;
-cursor: pointer;
-font-size: 25px;
-color: #086972;
-}
-
-#label:hover{
-  border: 2px solid #086972;
-}
-#message{
-  width: 500px;
-  height: 100px;
-  font-size: 25px;
-  margin: 15px 0;
-  padding: 5px;
-}
-
-.fa-brands{
-  color:white
-
-}
 
 /*body welcome page*/
-#quote{
-  width:auto;
-    padding-bottom: 10px;
-}
-
 
 .welcome-text{
   color: #086972;
   text-align: center;
   font-size: 40px;
-  margin: 40px;
+  margin: 30px;
 }
 /*Ethos*/
 
-#ethos{
-  height: 600px;
-  width: 100%;
+#ethos {
+  height: 650px;
+  width: 900px;
   background-color: #086972;
   color: white;
   list-style-type: square;
-  padding-left: 20px;
-}
-#ethos img{
-  height: 400px;
-  width: 400px;
-
+  padding: 0 40px;
+  margin-left: 20px;
 }
 
 #welcome h2, h3{
-  font-size: 40px;
-  padding: 20px;
+  font-size: 30px;
+  padding: 20px 0;
 }
 
-#ethos p{
+#ethos p, li{
   font-size: 30px;
 }
-
-#ethos li{
-  font-size: 30px;
-  
-}
-
-
-#image-father{
- background: url("https://res.cloudinary.com/dwnm1wdkt/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1651035948/Project%201/pexels-rodnae-productions-6849611_rdfkwy.jpg") no-repeat center center;
- width: 30%;
-    height: 500px;
-    float: left;
-    background-color: #086972;
-    
-}
-
 
 
 /* Meet up schedule */
+
+/* heading for section */
 
 #weekly{
   text-align: center;
@@ -208,25 +114,28 @@ color: #086972;
     padding-top: 10px;
     margin-top : 20px;
 }
+
+/* Image of childs block */
 #kids-blocks{ 
   background-image: url("https://res.cloudinary.com/dwnm1wdkt/image/upload/v1651011774/Project%201/pexels-skitterphoto-591652_gwdo5h.jpg");
-  width:100%;
+  width:1000px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   overflow:hidden;
   z-index: -1;
   position: relative;
-  top: -500px;
+  top: -400px;
+  margin-left: 10px;
 
 }
-
+/* Time table section */
 
 #time-table{
-  width:100%;
-  height: 950px
-
+  height: 650px;
 }
+
+/* Time table boxes */
 #time-table div{
   color: white;
     background-color: #086972;
@@ -239,13 +148,15 @@ color: #086972;
     box-sizing: border-box;
     z-index: 1;
     position: relative;
-    margin-left: 80px;
+    margin-left: 60px;
 }
 
+/* styling of icons */
 .fa-solid {
   padding: 20px;
 }
 
+/* Styling of text in time table boxes */
 #time-table >div >h3{
 padding-top:10px;
 }
@@ -253,10 +164,11 @@ padding-top:10px;
 #time-table h2{
   padding-bottom:8px;
 }
+
+/*Styling of Google map link */
 #time-table a{
   font-size: 25px;
   color:white;
-  
 }
 
 /* mouse over link */
@@ -278,19 +190,18 @@ text-align: center;
 /* Style the container with a rounded border, grey background and some padding and margin */
 .container {
   background-color: #086972;
-  border-radius: 5px;
   padding: 16px;
   margin: 16px 0;
   color:white;
-  font-size: 17px;
+  font-size: 25px;
 }
 
-/* Clear floats after containers */
-.container::after {
-  content: "";
-  clear: both;
-  display: table;
+.container p{
+  padding-left: 120px;
 }
+ .stars{
+  padding: 10px 120px 0;
+ }
 
 /* Float images inside the container to the left. Add a right margin, and style the image as a circle */
 .container img {
@@ -308,7 +219,7 @@ text-align: center;
 }
 
 
-/*Events sections */
+/*Events Page */
  
 .events{
   text-decoration: underline;
@@ -555,34 +466,62 @@ label{
 }
 
 
- /* Media Query */
-
-/*For larger screens from 1380px wide and down*/
-@media screen 
-and (max-device-width: 1380px) 
-and (min-device-width: 1025px) {
+   #contact-us{
+    float: right;
+    font-size: 25px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    line-height: 20px;
+   }
   
-.menu{
+   #contact-us h3{
+    margin: 10px 200px 30px 0px;
+     }
+   
+  #name-field{
+    width: 500px;
+    height: 30px;
+    font-size: 25px;
+    margin: 15px 0;
+    padding: 5px;
+  }
+  
+  #email-field{
+    width: 300px;
+    height: 30px;
+    font-size: 25px;
+    margin: 15px 0;
+    padding: 5px;
+  }
+  
+  input{
+    display: inline-block;
+    text-align: left;
+    font-size: 25px;
+    padding: 5px;
+  }
+  #label{
+  padding: 10px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
   font-size: 25px;
-  margin-left: 500px;
-}
-
-  #ethos {
-    height: 700px;
-
-}
-#image-father {
-  height: 600px;
-  padding: 90px 30px 0;
-}
-#video{
-  height:800px;
-}
-#time-table div{
-  height: 460px
-}
-
-}
+  color: #086972;
+  }
+  
+  #label:hover{
+    border: 2px solid #086972;
+  }
+  #message{
+    width: 500px;
+    height: 100px;
+    font-size: 25px;
+    margin: 15px 0;
+    padding: 5px;
+  }
+  
+  
+ /* Media Query */
 
 
 /*For larger screens from 1024px wide and down*/
@@ -606,10 +545,6 @@ padding: 7px;
   height: 600px;
 }
 
-#image-father{
-  width: 40%;
-  height: 650px;
-}
 #ethos{
 height: 800px
 }
@@ -622,10 +557,6 @@ height: 800px
 #ethos li {
   font-size: 25px;
 
-}
-
-#ethos img{
-  margin-top: -60px;
 }
 
 #ethos h3 {
@@ -772,17 +703,6 @@ nav ul li a {
 .menu-button{
   margin-left: 200px;
 }
-#ethos img {
-  height: 250px;
-    width: 250px;
-    margin: 20px 0 0 20px;
-}
-
-#image-father {
-  height: 270px;
-  width: 320px;
-  padding-top: 10px;
-}
 
 #ethos{
 height: 900px;
@@ -830,7 +750,11 @@ margin-top: 300px;
     border: 10px solid white;
 }
 
+/* Events section */
 
+
+
+/*
 #comments {
   height: 2300px;
 }
