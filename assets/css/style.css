@@ -12,8 +12,24 @@ body{
     border: 0;
 }
 
-h2 h3 {
+h2 {
   font-size: 30px;
+}
+
+h3 {
+  fonts-size:27px;
+}
+
+h4{
+  font-size: 25px;
+}
+
+h5{
+  font-size: 23px;
+}
+
+p{
+  font-size: 20px;
 }
 
 /*Navigation links*/
@@ -221,32 +237,13 @@ text-align: center;
 
 /*Events Page */
  
-.events{
-  text-decoration: underline;
-}
 /* Yoga mom Advertisment */
 
-#yoga{
-padding: 30px 0;
-text-align: center;
-}
-    
-/*yoga images */
+
+/* Sizing of yoga images */
 .item{
-  height: 300px;
-  width: 300px;
-  margin: 5px;
-}
-
-/* Form link buttom */
-#yoga a{
-color: #086972;
-font-weight:700;
-}
-
-#yoga a:hover{
-  background-color: #086972;
-  color: white;
+width: 250px;
+height: 250px;
 }
 
 /*massage advertisment */
@@ -347,6 +344,7 @@ legend{
   background-color: white;
   width: 120px;
   color: #086072;
+  font-size: 25px;
 }
 
 #submit-button:hover{
@@ -360,22 +358,24 @@ legend{
 /* Contact us Form */
 #contact-us{
 background-color: #086972;
-width:1000px;
 color: white;
 }
 
 #form{
   margin: 0 30px 20px;
   height: 350px;
+  
 }
 
 #form input{
-  width:200px;
+  width:300px;
   height: 25px;
+  font-size: 20px;
 }
 
 #message{
-width:200px;
+width:300px;
+font-size: 20px;
 }
 
 #form #button{
@@ -392,135 +392,77 @@ color:#086972;
 
 
 /*For larger screens from 1024px wide and down*/
-/*@media screen 
-  and (max-device-width: 1024px) 
-  and (min-device-width: 769px) {
-  
-
-  nav a{
-font-size: 25px;
-padding: 7px;
-}
-
-.menu{
-  width: 800px;
-  
-}
-
-
-#video {
-  height: 600px;
-}
-
-#ethos{
-height: 800px
-}
-
-#ethos p {
-  font-size: 25px;
-  padding: 0 10px;
-}
-
-#ethos li {
-  font-size: 25px;
-
-}
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) {
+ 
+    
+/* Ethos Section on home page */    
 
 #ethos h3 {
-  font-size: 35px;
-}
-
-
-#time-table{
-  height: 680px;
-}
-
-#time-table h2, h3 {
-  font-size: 20px;
-}
-#time-table div {
-  height: 280px;
-}
-#kids-blocks{
-  top: -400px;
-}
-
-#comments{
-  height: 1100px;
-}
-
-
-
-#contact-info {
-padding: 0;
- text-align: center;
- float:unset;
-}
-#contact-us{
-float: unset;
-text-align: center;
-}
-
-#contact-us h3{
-  padding: 100px 100px 10px 0;
-}
-
-#email-field {
-  width: 500px;
-}
-
-#button {
-  margin-right: 410px
-
-}
-
-#contact-us h3{
   font-size: 30px;
-  text-decoration: underline;
 }
+
+/*Events page */
+
+.events{
+  text-align: center;
+}
+
+/* Yoga Advertisment */
 
 #yoga{
-  margin-left: 150px;
-  padding: 30px 20px
+ 
+  padding: 30px;
+  text-align: center;
 }
-
-
-#massage{
-  margin-left: 120px;
-  padding: 30px 20px;
-}
-.container-weaning{
-  margin-left: 0;
-}
-#weaning{
-  padding: 20px;
-  margin-left: 120px
-}
-.sign-up-photo{
-height: 1000px;
-}
-#name-field-section {
-  width: 400px;
-}
-#email-field-section {
-  width: 400px;
-}
-#babys-name-section {
-  width: 400px;
-}
-}
+  }
 
 /*For small phone screens from 640px wide to 768px*/
-/*@media screen 
+@media screen 
   and (max-device-width: 768px) 
   and (min-device-width: 640px) {
  
-    .top-nav{
-      flex-direction: column;
-     
 
-
+/* Realign nav-bar */
+.top-nav{
+flex-direction: column;  
 }
+
+/* Resize hero video */
+
+video{
+  width: 640px;
+}
+
+/* Reside Quote */
+
+#quote h1{
+  font-size: 30px;
+}
+
+/*resize Ethos section */
+#ethos{
+  width: 560px;
+    margin: 0;
+    height: 900px;
+}
+
+/* Resize kids blocks image */
+#kids-blocks{
+  width:640px;
+}
+
+/* Restyle and size meet ups on timetable */
+#time-table div{
+  margin: 0;
+  width: 640px;
+  border: 10px solid white;
+}
+
+
+
+
   }
 
 
