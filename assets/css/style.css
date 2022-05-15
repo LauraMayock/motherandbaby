@@ -29,34 +29,25 @@ video{
 }
 
 #logo{
-  width: 300px;
+  width: 360px;
   margin-top: 10px;
   
   }
 
   /*Navigation links*/
-  
-.top-nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  background-color:white;
-  color: #086972;
-  height: 50px;
-  padding: 1em;
-}
 
-#menu {
+.top-nav {
   display: flex;
   flex-direction: row;
   list-style-type: none;
   margin: 0;
   font-size: 30px;
-  padding-left: 100px
+  padding-left: 100px;
+  
 }
 
-#menu >a {
+
+.menu >a {
   margin: 0 1rem;
   overflow: hidden;
   color: #086972;
@@ -64,81 +55,28 @@ video{
  font-weight: 700;
 }
 
-.menu-button-container {
-  display: none;
-  height: 100%;
-  width: 30px;
-  cursor: pointer;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#menu-toggle {
-  display: none;
-}
-
-#menu-button,
-#menu-button::before,
-#menu-button::after {
-  display: block;
-  background-color: #086972;
-  position: absolute;
-  height: 4px;
-  width: 30px;
-  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  border-radius: 2px;
-}
-
-#menu-button::before {
-  content: '';
-  margin-top: -8px;
-}
-
-#menu-button::after {
-  content: '';
-  margin-top: 8px;
-}
-
-#menu-toggle:checked + #menu-button-container #menu-button::before {
-  margin-top: 0px;
-  transform: rotate(405deg);
-}
-
-#menu-toggle:checked + #menu-button-container #menu-button {
-  background: rgba(255, 255, 255, 0);
-}
-
-#menu-toggle:checked + #menu-button-container #menu-button::after {
-  margin-top: 0px;
-  transform: rotate(-405deg);
-}
 
 
 
  /*footer*/
 
  footer{
-   height: 600px;
+   height:170px;
    color: white;
    background-color: #086972;
-   padding-top: 40px;
  }
 
 #contact{
 font-family: Patua One, Times New Roman, sans-serif;
 margin-left: 10px;
 padding-left: 1%;
-clear:both;
-text-align: left;
-margin-right:50px
+
  }
 
 
  #contact-info{
-  font-size: 25px;
-  padding: 10px;
-  float:left;
+  font-size: 15px;
+  text-align: center;
  }
 
  #contact-info ul{
@@ -198,15 +136,9 @@ color: #086972;
   margin: 15px 0;
   padding: 5px;
 }
- #social-media{
-   text-align: left;
-   font-size: 160%;
-   margin-right: 10px;
-   padding: 10px 0 10px 5px;
-   clear:both;
- }
+
 .fa-brands{
-  color:white;
+  color:white
 
 }
 
@@ -230,6 +162,8 @@ color: #086972;
   width: 100%;
   background-color: #086972;
   color: white;
+  list-style-type: square;
+  padding-left: 20px;
 }
 #ethos img{
   height: 400px;
@@ -237,7 +171,7 @@ color: #086972;
 
 }
 
-#ethos h2, h3{
+#welcome h2, h3{
   font-size: 40px;
   padding: 20px;
 }
@@ -258,7 +192,7 @@ color: #086972;
     height: 500px;
     float: left;
     background-color: #086972;
-    padding: 60px 30px 0;
+    
 }
 
 
@@ -269,10 +203,10 @@ color: #086972;
   text-align: center;
     background: #086972;
     height: 60px;
-    width: 100%;
+    width: 100vw;
     color: white;
     padding-top: 10px;
-    margin: 20px;
+    margin-top : 20px;
 }
 #kids-blocks{ 
   background-image: url("https://res.cloudinary.com/dwnm1wdkt/image/upload/v1651011774/Project%201/pexels-skitterphoto-591652_gwdo5h.jpg");
@@ -334,12 +268,11 @@ a:hover {
 /* Testimonial section*/
 
 #our-parents{
-  margin-top: 50px;
+  margin-top: 150px
 }
 
 #our-parents h2{
 text-align: center;
-font-size: 60px;
 }
 
 /* Style the container with a rounded border, grey background and some padding and margin */
@@ -349,7 +282,7 @@ font-size: 60px;
   padding: 16px;
   margin: 16px 0;
   color:white;
-  font-size: 25px;
+  font-size: 17px;
 }
 
 /* Clear floats after containers */
@@ -370,14 +303,9 @@ font-size: 60px;
 
 /* Increase the font-size of a span element */
 .container span {
-  font-size: 35px;
+  font-size: 20px;
   margin-right: 15px;
 }
-
-.container p{
-margin-left: 110px;
-}
-
 
 
 /*Events sections */
@@ -627,10 +555,17 @@ label{
 }
 
 
-/* Media Query */
+ /* Media Query */
 
 /*For larger screens from 1380px wide and down*/
-@media screen and (max-width: 1380px) {
+@media screen 
+and (max-device-width: 1380px) 
+and (min-device-width: 1025px) {
+  
+.menu{
+  font-size: 25px;
+  margin-left: 500px;
+}
 
   #ethos {
     height: 700px;
@@ -646,26 +581,27 @@ label{
 #time-table div{
   height: 460px
 }
-footer{
-height: 650px;
-}
+
 }
 
+
 /*For larger screens from 1024px wide and down*/
-@media screen and (max-width: 1024px) {
+@media screen 
+  and (max-device-width: 1024px) 
+  and (min-device-width: 769px) {
+  
 
   nav a{
 font-size: 25px;
 padding: 7px;
 }
 
-#menu{
+.menu{
   width: 800px;
-  padding-left: 130px;
+  
 }
-#menu >a{
-  font-size: 25px;
-}
+
+
 #video {
   height: 600px;
 }
@@ -696,9 +632,7 @@ height: 800px
   font-size: 35px;
 }
 
-#weekly{
-  padding: 15px;
-}
+
 #time-table{
   height: 680px;
 }
@@ -717,9 +651,7 @@ height: 800px
   height: 1100px;
 }
 
-footer {
-  height: 1000px;
-}
+
 
 #contact-info {
 padding: 0;
@@ -779,137 +711,54 @@ height: 1000px;
   width: 400px;
 }
 }
-/*For tablet screens from 768px wide and down*/
-@media (max-width: 768px) {
-  .menu-button-container {
-    display: flex;
-    
-  }
-  #menu {
-    position: absolute;
-    top: 0;
-    margin: 90px 350px 0 0;
-    left: 0;
-    flex-direction: column;
-    width:300px;
-    justify-content: center;
-    align-items: center;
-    
-  }
 
-  #menu-toggle ~ #menu a {
-    height: 0;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  #menu-toggle:checked ~ #menu a{
-    border: 1px solid #333;
-    height: 2.5em;
-    padding: 0.5em;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    color:#086972;
-    align-items: center;
-   
-  }
-  #menu > a {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0.5em 0;
-    width: 100%;
-    color:white ;
-    background-color: white;
-    align-items: right;
-  }
-  #menu > a:not(:last-child) {
-    border-bottom: 1px solid #444;
-  }
-
-#video{
-  height: 250px;
-}
-
-.welcome-text{
-height: 30px;
-font-size: 25px;
-padding: 0
-}
-
-#image-father {
-  height: 320px;
-  width: 400px;
-}
-
-#ethos img {
-  height: 350px;
-  width: 350px;
-  margin: -60px 0 0 10px;
-}
-
-#ethos{
-height:1000px;
-
-}
-#ethos h2 {
-  font-size: 25px;
-}
-
-#ethos h3 {
-  font-size: 25px;
-}
-#ethos p {
-  font-size: 20px;
-
-}
-#ethos ul{
-  list-style-type: square;
-}
-#ethos li {
-  font-size: 20px;
-  padding: 0 0 0 10px;
+/*For small phone screens from 640px wide to 768px*/
+@media screen 
+  and (max-device-width: 768px) 
+  and (min-device-width: 640px) {
  
-}
-
-#time-table div {
-  width: 100%;
-
+    .top-nav{
+      flex-direction: column;
+     
 
 
 }
-
-/*For tablet screens from 768px wide and down*/
-@media screen and (max-width: ) {
-}
-
-/* Add media queries for responsiveness. This will center both the text and the image inside the container */
-@media (max-width: 500px) {
-  .container {
-    text-align: center;
   }
 
-  .container img {
-    margin: auto;
-    float: none;
-    display: block;
+
+/*For small phone screens from 360px wide to 639px*/
+@media screen 
+  and (min-device-width: 360px)
+  and (max-device-width: 639px) {
+
+  .top-nav{
+    flex-direction: column;
+padding: 0;
   }
-}
-
-
-/*For small phone screens from 425px wide and down*/
-@media screen and (max-width: 425px) {
-
-  #logo {
-    width:170px;
+.menu{
+font-size: 20px;
+width: 320px;
+padding-left:10px;
 
 }
+
+.menu >a {
+  margin: 0 10px;
+
+}
+#logo{
+width: 320px;
+}
+
 video{
-  margin-top: 0;
-}
+    width: 320px;
+  }
 
 #video {
   height: 200px;
+}
+#quote{
+    width: 320px;
 }
 
 .welcome-text {
@@ -920,88 +769,71 @@ video{
 nav ul li a {
   font-size: 18px;
 }
-#menu-button{
+.menu-button{
   margin-left: 200px;
 }
 #ethos img {
   height: 250px;
     width: 250px;
-  margin-right: 40px;
+    margin: 20px 0 0 20px;
 }
 
 #image-father {
-  height: 350px;
-  width: 40%;
+  height: 270px;
+  width: 320px;
+  padding-top: 10px;
 }
 
-#ethos h2{
-  font-size: 25px;
+#ethos{
+height: 900px;
+width: 320px;
+}
+
+#welcome h2, h3{
+  font-size: 20px;
 }
 
 #ethos p {
-  font-size: 20px;
-    padding: 0 10px;
+  font-size: 17px;
+  padding: 0 7px;
 }
 
 #ethos h3{
-  font-size: 25px;
+  font-size: 20px;
 
 }
 #ethos li {
   padding: 0 10px 10px;
-  font-size: 20px;
+  font-size: 17px;
 }
-
-#ethos {
-  height: 1150px;
-  line-height: 1.2;
-}
-#ethos ul{
-    list-style: square;
-}
-#weekly h2{
-  font-size: 25px;
+#weekly {
+width: 340px;
+font-size: 25px;
 }
 
 
 #time-table {
-  height: 1120px;
+  height: 1050px;
+  width: 300px;
 }
 
 #kids-blocks{
   height: 300px;
-width:100vw;
-margin-top: 200px;
+width: 340px;
+margin-top: 300px;
 }
-
 
 #time-table div {
     margin: 0;
-    width: 100vw;
-    padding-top: 1px;
-    height: 300px;
-}
-#buggy{
-  border: 10px solid white;
+    width: 350px;
+    height: 330px;
+    border: 10px solid white;
 }
 
-#tea{
-  border: 10px solid white;
-}
-
-#softplay{
-  border: 10px solid white;
-}
-.wrapper .box {
-  width: 100vw;
-  font-size: 20px;
-}
 
 #comments {
   height: 2300px;
 }
-
-
 
 #contact-info {
   font-size: 15px;
@@ -1021,10 +853,6 @@ margin-top: 200px;
     padding: 20px;
 }
 
-button {
-  font-size: 25px;
-  margin-right: 200px;
-}
 #name-field {
   width: 280px;
   font-size: 15px;
@@ -1039,38 +867,7 @@ button {
   width: 280px;
   font-size: 15px;
 }
-#button{
-  font-size: 20px;
-}
 
-footer {
-  height: 900px;
-}
-#time-table div {
-  margin: 0;
-  width: 100vw;
-  padding-top: 1px;
-  height: 300px;
-}
-#buggy{
-border: 10px solid white;
-}
 
-#tea{
-border: 10px solid white;
-}
-
-#softplay{
-border: 10px solid white;
-}
-.wrapper .box {
-width: 100vw;
-font-size: 20px;
-}
-
-#comments {
-height: 2300px;
-}
 
 }
-

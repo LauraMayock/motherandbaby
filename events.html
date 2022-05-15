@@ -13,22 +13,22 @@
     <header>
         <div class="top-nav">
             <div>
-              <a href="index.html" >
-                <img id="logo" src="https://res.cloudinary.com/dwnm1wdkt/image/upload/v1652185276/Project%201/Mother_and_baby_Logo_w07dsl.png" alt="Westport Mother and baby group logo"> 
-            </a>
+              <!--Logo in nav bar with embedded link to homepage-->
+              <a href="index.html">
+                <img id="logo"
+                  src="https://res.cloudinary.com/dwnm1wdkt/image/upload/v1652185276/Project%201/Mother_and_baby_Logo_w07dsl.png"
+                  alt="Westport Mother and baby group logo">
+              </a>
             </div>
-            <input id="menu-toggle" type="checkbox" />
-            <label class='menu-button-container' for="menu-toggle">
-            <div id='menu-button'></div>
-          </label>
-            <div id="menu"> 
+           <nav>
+            <div class ="menu">
               <a href="index.html">Home</a>
-               <a href="events.html">Events</a>
-                <a href="#comments" aria-label="Go to Testimonials section.">Testimonials</a>
-                <a href="#contact-info" aria-label="Go to Contact us section. Fill out the Get in touch form to contact us.">Contact us</a>
+              <a href="events.html">Events</a>
+              <a href="contact-us.html"
+                aria-label="Go to Contact us section. Fill out the Get in touch form to contact us.">Contact us</a>
             </div>
+          </nav>
           </div>
-           
  </header>
  
      <section>   
@@ -101,57 +101,37 @@
     
 <footer>
     <section>
-
-        <div id="contact-info">
-           <ul id="contact-list">
-               <h3>Contact us</h3>
-               <br>
-               <li>
-                <i class="fa-solid fa-location-dot"></i>  
-                The Fairgreen,
-                Westport,
-                Co. Mayo
-              </li>
-           <li>
-               <i class="fa-solid fa-envelope"></i>
-               motherandme.westport@yahoo.com
-            </li>
-            <li>
-                <i class="fa-solid fa-phone"></i> 
-                098-254675
-            </li>
-        </ul>
-        <br>
-        <span id="social-media">
-        <a href="http:/www.facebook.com" target="_blank" rel="noopener" aria-label="Find us on Facebook (Link opens in a new tab)"> <i class="fa-brands fa-facebook"></i></a>
-        <a href="http:/www.Instagram.com" target="_blank" rel="noopener" aria-label="Find us on Instagram (Link opens in a new tab)"> <i class="fa-brands fa-instagram"></i></a>
-    </span>
-    </div>  
-    
-    <div id="contact-us">
-    <form id="form" action="https://formdump.codeinstitute.net" method="post">
+        <footer>
+            <section>
         
-            <h3>Get in touch:</h3>
-            <div>
-            <label for="name-field" class="block-lable">Name:</label><br>
-    <input id="name-field" type="text" name="full_name" placeholder="Your Name" required> 
-        </div>
-        <div>
-            <label for="email-field" class="block-lable">Email:</label><br>
-    <input id="email-field" type="email" name="email" placeholder="Your Email" required> 
-        </div>
-    
-        <label for="message" class=""block-lable>Message:</label><br>
-        <textarea id="message" type="text" name="message" placeholder="Message" rows="5" style-height="60px" required></textarea>
-        <br>
-        <input id="button" type="submit" value="Submit">
-    
-      </form>
-    </div>
-    
-    
-    </section>
-    
+              <div id="contact-info">
+                <h3>Contact us</h3>
+                  <ul id="contact-list">
+                  <li>
+                    The Fairgreen,<br>
+                    Westport,
+                    Co. Mayo.
+                  </li>
+                  <li>
+                    motherandme.westport@yahoo.com
+                  </li>
+                  <li>
+                    098-254675
+                  </li>
+                </ul>
+        
+                <span id="social-media">
+                  <a href="http://www.facebook.com" target="_blank" rel="noopener"
+                    aria-label="Find us on Facebook (Link opens in a new tab)"> <i class="fa-brands fa-facebook"></i></a>
+                  <a href="http://www.Instagram.com" target="_blank" rel="noopener"
+                    aria-label="Find us on Instagram (Link opens in a new tab)"> <i class="fa-brands fa-instagram"></i></a>
+                </span>
+              </div>
+        
+        
+            </section>
+        
+        
     
     </footer>
 <!--Font awesome script-->

@@ -13,7 +13,7 @@
 
 <body>
   <header>
-    <!--Hamburger and top-nav-->
+    
     <div class="top-nav">
       <div>
         <!--Logo in nav bar with embedded link to homepage-->
@@ -23,26 +23,21 @@
             alt="Westport Mother and baby group logo">
         </a>
       </div>
-      <!--checkbox for hamburger menu-->
-      <input id="menu-toggle" type="checkbox" />
-      <label class='menu-button-container' for="menu-toggle">
-        <div id='menu-button'></div>
-      </label>
-      <!--Nav-bar tabs-->
-      <div id="menu">
+     <nav>
+      <div class ="menu">
         <a href="index.html">Home</a>
         <a href="events.html">Events</a>
-        <a href="#comments" aria-label="Go to Testimonials section.">Testimonials</a>
-        <a href="#contact-info"
+        <a href="#contact-us.html"
           aria-label="Go to Contact us section. Fill out the Get in touch form to contact us.">Contact us</a>
       </div>
+    </nav>
     </div>
-
+  
   </header>
   <!--Hero video-->
   <div id="video">
     <video
-      src="https://res.cloudinary.com/dwnm1wdkt/video/upload/v1650729946/Project%201/pexels-max-vakhtbovych-7394158_jwdvnc.mp4"
+      src="assets/images/pexels-max-vakhtbovych-7394158 (1).mp4"
       playsinline autoplay muted>
       <p>Your browser doesen't support HTML5 video</p><a
         href="https://res.cloudinary.com/dwnm1wdkt/video/upload/v1650729946/Project%201/pexels-max-vakhtbovych-7394158_jwdvnc.mp4">
@@ -50,6 +45,7 @@
       </a>
     </video>
   </div>
+
   <!--Opening quote-->
   <section id="quote">
     <h1 class="welcome-text">They say that it takes a village to raise a child.</h1>
@@ -131,8 +127,8 @@
       <!--Image 1 of person submitting the testimonial-->
       <img
         src="https://res.cloudinary.com/dwnm1wdkt/image/upload/v1651256248/Project%201/pexels-victoria-borodinova-1650092_1_-min_c0z0qf.jpg"
-        alt="Mother holding child" alt="Avatar" style="width:90px">
-      <p><span>Caroline ONeil</span>Mom of 2</p>
+        alt="Mother holding child" style="width:90px">
+      <p><span>Caroline ONeil</span><br>Mom of 2</p>
       <p>I drop my child off at playschool and then I go to my meets-ups with my youngest. It's a great way for us both
         to socialize and it forces me to sit and relax instead of rushing around trying to do all the housework that
         never seems to be done.</p>
@@ -151,7 +147,7 @@
       <img
         src="https://res.cloudinary.com/dwnm1wdkt/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1651256986/Project%201/pexels-anna-shvets-4586688_ljwcvl-min_litkgp.jpg"
         alt="A father with a child on his back" style="width:90px">
-      <p><span>Steven Chris</span> IT | Dad</p>
+      <p><span>Steven Chris</span><br> IT | Dad</p>
       <p>I am a stay-at-home dad and have found the soft play meet-up great for my small boy. He's an energetic toddler
         so it can be a bit worrisome around the babies on the Tuesday meetup.</p>
       <div class="stars">
@@ -169,7 +165,7 @@
       <img
         src="https://res.cloudinary.com/dwnm1wdkt/image/upload/v1651256220/Project%201/pexels-zakhar-vozhdaienko-9098559_1_-min_t3ik8m.jpg"
         alt="woman smiling at camera." style="width:90px">
-      <p><span>Alex Smith</span> Mom of 3</p>
+      <p><span>Alex Smith</span><br> Mom of 3</p>
       <p>I have triplets and am at home with them all the time. It is great to get out and have a place where you know
         they will be safe and entertained where I can get a few minutes to turn off and enjoy a chat.</p>
       <div class="stars">
@@ -185,21 +181,17 @@
     <section>
 
       <div id="contact-info">
-        <ul id="contact-list">
-          <li>Contact us</li>
-
+        <h3>Contact us</h3>
+          <ul id="contact-list">
           <li>
-            <i class="fa-solid fa-location-dot"></i>
-            The Fairgreen,
+            The Fairgreen,<br>
             Westport,
-            Co. Mayo
+            Co. Mayo.
           </li>
           <li>
-            <i class="fa-solid fa-envelope"></i>
             motherandme.westport@yahoo.com
           </li>
           <li>
-            <i class="fa-solid fa-phone"></i>
             098-254675
           </li>
         </ul>
@@ -210,27 +202,6 @@
           <a href="http://www.Instagram.com" target="_blank" rel="noopener"
             aria-label="Find us on Instagram (Link opens in a new tab)"> <i class="fa-brands fa-instagram"></i></a>
         </span>
-      </div>
-
-      <div id="contact-us">
-        <form id="form" action="https://formdump.codeinstitute.net" method="post">
-
-          <h3>Get in touch:</h3>
-          <div>
-            <label for="name-field" class="block-label">Name:</label><br>
-            <input id="name-field" type="text" name="full_name" placeholder="Your Name" required>
-          </div>
-          <div>
-            <label for="email-field" class="block-label">Email:</label><br>
-            <input id="email-field" type="email" name="email" placeholder="Your Email" required>
-          </div>
-
-          <label for="message" class="block-label">Message:</label><br>
-          <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
-          <br>
-          <input id="button" type="submit" value="Submit">
-
-        </form>
       </div>
 
 
