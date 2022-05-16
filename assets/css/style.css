@@ -591,9 +591,8 @@ padding: 0;
 
 .menu{
 font-size: 20px;
-width: 320px;
-padding-left:10px;
-
+width: 360px;
+padding-left: 50px;
 }
 
 .menu >a {
@@ -603,14 +602,14 @@ padding-left:10px;
 /*Resize logo */
 
 #logo{
-width: 320px;
+width: 340px;
 padding-right: 30px;
 }
 
 /* Resize video */
 
 video{
-    width: 320px;
+    width: 360px;
   }
 
 #video {
@@ -620,7 +619,7 @@ video{
 /* Resize quote section */
 
 #quote{
-    width: 320px;
+    width: 360px;
 }
 
 .welcome-text {
@@ -628,15 +627,12 @@ video{
   margin: 10px;
 }
 
-
-.menu-button{
-  margin-left: 200px;
-}
-
+/* Re-size ethos section */
 #ethos{
-height: 650px;
+height: 700px;
 width: 320px;
 margin: 0;
+padding: 0 0 0 30px
 }
 
 #welcome h2, h3{
@@ -656,8 +652,9 @@ margin: 0;
   padding: 0 10px 10px;
   font-size: 17px;
 }
+
 #weekly {
-width: 340px;
+width: 350px;
 font-size: 25px;
 }
 
@@ -666,20 +663,54 @@ font-size: 25px;
   height: 1050px;
   width: 300px;
 }
-
+/* Re-size and re- align Kids blocks */
 #kids-blocks{
   height: 300px;
-width: 340px;
-margin-top: 300px;
+width: 350px;
+margin: 220px 0;
 }
 
+/* Resize meet up section */
 #time-table div {
     margin: 0;
     width: 350px;
-    height: 330px;
+    height: 350px;
     border: 10px solid white;
 }
 
+
+/* Style Testimonial section */
+#our-parents {
+  margin-top: 230px;
+
+}
+/*Remove images from Testimonial section */
+.container img{
+display:none;
+}
+
+.container p{
+padding: 0;
+}
+
+.stars{
+padding:10px 0;
+}
+
+#contact-info li{
+font-size: 20px;
+}
+
+
+
+
+
+}
+
+
+
+
+  }
 /* Events section */
 
 
