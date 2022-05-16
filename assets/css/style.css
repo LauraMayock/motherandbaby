@@ -576,18 +576,19 @@ width: 640px;
   }
 
 
-
-}
-
 /*For small phone screens from 360px wide to 639px*/
-/*@media screen 
+@media screen 
   and (min-device-width: 360px)
   and (max-device-width: 639px) {
 
-  .top-nav{
-    flex-direction: column;
+
+/* Resize nav bar */
+
+.top-nav{
+flex-direction: column;
 padding: 0;
   }
+
 .menu{
 font-size: 20px;
 width: 320px;
@@ -597,11 +598,16 @@ padding-left:10px;
 
 .menu >a {
   margin: 0 10px;
-
 }
+
+/*Resize logo */
+
 #logo{
 width: 320px;
+padding-right: 30px;
 }
+
+/* Resize video */
 
 video{
     width: 320px;
@@ -610,6 +616,9 @@ video{
 #video {
   height: 200px;
 }
+
+/* Resize quote section */
+
 #quote{
     width: 320px;
 }
@@ -619,16 +628,15 @@ video{
   margin: 10px;
 }
 
-nav ul li a {
-  font-size: 18px;
-}
+
 .menu-button{
   margin-left: 200px;
 }
 
 #ethos{
-height: 900px;
+height: 650px;
 width: 320px;
+margin: 0;
 }
 
 #welcome h2, h3{
@@ -675,7 +683,7 @@ margin-top: 300px;
 /* Events section */
 
 
-
+  }
 
 /*#comments {
   height: 2300px;
