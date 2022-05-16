@@ -241,7 +241,7 @@ text-align: center;
 
 
 /* Sizing of yoga images */
-.item{
+.item, .item-1{
 width: 250px;
 height: 250px;
 }
@@ -521,7 +521,7 @@ width: 640px;
   /* yoga advertisment */
 
   /*Resize yoga images */
-  .item {
+  .item, .item-1 {
     width: 150px;
     height: 150px;
   }
@@ -704,14 +704,61 @@ font-size: 20px;
 /* Events section */
 
 .events{
-  margin-top: 20px;
+  margin-top: 30px;
   text-align: center;
 }
 #yoga{
   text-align: center;
 }
 
+/* Make some of the images hide with small screen size */
+
+#yoga .item{
+  display:none;
 }
+#massage .item{
+  display: none;
+}
+
+/* Change the fonts for both massage and yoga adds */
+#yoga-advertisment h4{
+  font-size: 20px;
+}
+
+#massage-advertisment h4{
+  font-size: 20px;
+}
+/* Re- size video */
+#video-weaning{
+height:300px;
+width: 300px;
+}
+
+/* Re-size weaning sections font */
+#weaning-advertisment h4{
+  font-size: 20px;
+}
+
+/*Pre-booking form */
+
+/* Make the image hide for small screens */
+.sign-up-photo{
+  display: none;
+  
+}
+
+/* Amend the length of for the form */
+
+.sign-up-form{
+  height: 650px;
+}
+
+legend{
+  font-size: 20px;
+}
+
+}
+
 
 
 
