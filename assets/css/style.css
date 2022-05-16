@@ -1,4 +1,4 @@
-@import url('https://res.cloudinary.com/dwnm1wdkt/image/upload/v1652136472/Project%201/VistaCreate-230837704-stock-photo-smiling-father-baby-daughter-sitting_1_-min_ffl5b3.jpg');
+@import url('CLOUDINARY_URL=cloudinary://972894798424536:AHtCfmAjM06dCaIc35jmtNx_FvQ@dwnm1wdkt');
 
 body{
   font-family: Comfortaa, Arial, sans-serif; 
@@ -17,7 +17,7 @@ h2 {
 }
 
 h3 {
-  fonts-size:27px;
+  font-size:27px;
 }
 
 h4{
@@ -443,7 +443,8 @@ max-width: 640px;
 
 /* Re-align nav-bar */
 .top-nav{
-flex-direction: column;  
+flex-direction: column; 
+width: 640px; 
 }
 
 /* Resize hero video */
@@ -454,8 +455,12 @@ video{
 
 /* Reside Quote */
 
+#quote{
+width: 640px;
+  }
+
 #quote h1{
-  font-size: 30px;
+  font-size: 25px;
 }
 
 /*resize Ethos section */
@@ -471,6 +476,13 @@ video{
   margin-top: 140px;
 }
 
+
+/*Resize Weekly meet up banner */
+#weekly {
+  width: 640px;
+}
+
+
 /* Restyle and size meet ups on timetable */
 #time-table div{
   margin: 0;
@@ -482,13 +494,20 @@ video{
 
 #our-parents{
   margin-top: 820px;
+  width: 640px;
 }
 
 #contact-info li, p{
 font-size: 20px;
 }
 
-  }
+/* Resize footer */
+
+footer{
+width: 640px;
+}
+
+
 /* Events page */
 
 
@@ -509,9 +528,56 @@ font-size: 20px;
 
 #adds{
   text-align: center;
+  width: 640px;
+}
+/* Re-size massage section*/
+
+.container-massage{
+width: 640px;
+
 }
 
 
+
+/* Re-size weaning section*/
+
+.video-section{
+  width: 640px;
+}
+
+  }
+
+/* Restyle and align sign up photo */
+#sign-up-photo{
+  margin: 317px 415px 0;
+  border-radius: 50%;
+
+}
+
+/* Resize form section */
+
+#sign-up-form{
+  width:580px;
+}
+
+#form-section {
+  width: 640px;
+}
+
+
+/* Re-size contact us form page */
+
+#form{
+  width:620px
+}
+#contact-us{
+  width:640px;
+}
+  }
+
+
+
+}
 
 /*For small phone screens from 360px wide to 639px*/
 /*@media screen 
