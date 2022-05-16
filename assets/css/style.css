@@ -602,8 +602,8 @@ padding-left: 50px;
 /*Resize logo */
 
 #logo{
-width: 340px;
-padding-right: 30px;
+width: 300px;
+
 }
 
 /* Resize video */
@@ -701,20 +701,21 @@ padding:10px 0;
 font-size: 20px;
 }
 
+/* Events section */
 
-
-
+.events{
+  margin-top: 20px;
+  text-align: center;
+}
+#yoga{
+  text-align: center;
+}
 
 }
 
 
 
 
-  }
-/* Events section */
-
-
-  }
 
 /*#comments {
   height: 2300px;
