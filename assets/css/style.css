@@ -53,6 +53,15 @@ text-decoration: none;
 font-weight: 700;
 }
 
+.menu a:hover {
+  color: white;
+  background-color: #086972;
+  padding:20px;
+}
+
+
+
+
 #logo{
   width: 250px;
 }
@@ -253,7 +262,8 @@ text-align: center;
 
 }
 
-/* Sizing of yoga images */
+
+/* Sizing of yoga and massage images */
 .item, .item-1{
 width: 250px;
 height: 250px;
@@ -400,7 +410,7 @@ color:#086972;
 
 }
 
-#form #button:hover{
+ #submit-button:hover{
   color:white;
   background-color: #086972;
 }
@@ -710,9 +720,11 @@ width: 300px;
 }
 
 /* Amend the length of for the form */
-
-.sign-up-form{
-  height: 650px;
+#form-section{
+  height: 500px;
+}
+#sign-up-form{
+  height: 500px;
 width: 100%
 }
 .fieldset input {
