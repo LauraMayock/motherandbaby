@@ -37,7 +37,7 @@ p{
 .top-nav {
   display: flex;
   list-style-type: none;
-  margin: 0;
+  margin: 0 20px;
   font-size: 30px;
   align-items: center;
   flex-direction: row;
@@ -54,13 +54,13 @@ font-weight: 700;
 }
 
 #logo{
-  width: 300px;
+  width: 250px;
 }
 
 /*hero image/video */
 
 video{
-    width: 1000px;
+    width: 100%;
 }
 
  /*footer*/
@@ -92,19 +92,20 @@ video{
 .welcome-text{
   color: #086972;
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
   margin: 30px;
 }
 /*Ethos*/
 
 #ethos {
-  height: 650px;
-  width: 900px;
+  height: 800px;
+  width: 100%;
   background-color: #086972;
   color: white;
-  list-style-type: square;
-  padding: 0 40px;
-  margin-left: 20px;
+}
+
+#welcome{
+  width:100%
 }
 
 #welcome h2, h3{
@@ -114,6 +115,7 @@ video{
 
 #ethos p, li{
   font-size: 30px;
+  padding: 20px;
 }
 
 
@@ -125,47 +127,47 @@ video{
   text-align: center;
     background: #086972;
     height: 60px;
-    width: 100vw;
+    width: 100%;
     color: white;
     padding-top: 10px;
     margin-top : 20px;
 }
 
 /* Image of childs block */
-#kids-blocks{ 
+#kids-blocks img{ 
   background-image: url("https://res.cloudinary.com/dwnm1wdkt/image/upload/v1651011774/Project%201/pexels-skitterphoto-591652_gwdo5h.jpg");
-  width:1000px;
+  width:100%;
+  height:650px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  overflow:hidden;
-  z-index: -1;
-  position: relative;
-  top: -400px;
-  margin-left: 10px;
-
 }
 /* Time table section */
 
 #time-table{
-  height: 650px;
+  width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 
 /* Time table boxes */
-#time-table div{
-  color: white;
+  #time-table div {
+    color: white;
     background-color: #086972;
+    width: 400px;
+    height: 420px;
+    border: 10px solid white;
     padding: 20px 20px 20px 10px;
-    display: inline;
-    width: 25%;
-    height: 400px;
-    float: left;
     text-align: center;
     box-sizing: border-box;
-    z-index: 1;
-    position: relative;
-    margin-left: 60px;
+    
+   
 }
+
 
 /* styling of icons */
 .fa-solid {
@@ -196,7 +198,7 @@ a:hover {
 /* Testimonial section*/
 
 #our-parents{
-  margin-top: 150px
+  margin-top: 10px;
 }
 
 #our-parents h2{
@@ -222,10 +224,10 @@ text-align: center;
 /* Float images inside the container to the left. Add a right margin, and style the image as a circle */
 .container img {
   float: left;
-  margin-right: 20px;
-  border-radius: 50%;
+  margin-right: 30px;
   width: 90px;
   height:90px;
+  border-radius: 50%;
 }
 
 /* Increase the font-size of a span element */
@@ -236,9 +238,21 @@ text-align: center;
 
 
 /*Events Page */
- 
+#events{
+  width: 100%;
+  height: 50px;
+  background-color: #086972;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+
+}
 /* Yoga mom Advertisment */
 
+#yoga{
+text-align: center;
+
+}
 
 /* Sizing of yoga images */
 .item, .item-1{
@@ -266,7 +280,7 @@ height: 250px;
 /* Pre-booking form */
 
 #form-section{
-  width:100vw;
+  width:100%;
   height: 650px;
 
 }
@@ -275,7 +289,7 @@ height: 250px;
 background: url("https://res.cloudinary.com/dwnm1wdkt/image/upload/v1651264272/Project%201/pexels-tatiana-syrikova-3933250-min_l71ezs.jpg");
 background-size:cover;
 background-position: center;
-width: 800px;
+width: 100%;
 height: 650px;
 margin-left: 200px;
 }
@@ -395,36 +409,42 @@ color:#086972;
 @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) {
- 
     
 /* Ethos Section on home page */    
 
-#ethos h3 {
-  font-size: 30px;
+#ethos{
+  height: 1000px;
 }
 
+#ethos p, li{
+  font-size: 30px;
+  padding: 20px;
+
+  }
+
+}
 /*Events page */
 
-.events{
+/*.events{
   text-align: center;
   
 }
 
 /* Pre-booking form */
 
-#form-section {
+/*#form-section {
   width: 640px
 }
 
 /* Amend placement of form */
 
-#sign-up-form{
+/*#sign-up-form{
 max-width: 640px;
     position: relative;
 
 }
 /* Re-size and amend placing on image */
-.sign-up-photo{
+/*.sign-up-photo{
     width: 200px;
     height: 200px;
     position: absolute;
@@ -433,68 +453,66 @@ max-width: 640px;
 }
 
 
-
+  }
 
 /*For small phone screens from 640px wide to 768px*/
 @media screen 
-  and (max-device-width: 768px) 
+  and (max-device-width: 768px)
   and (min-device-width: 640px) {
  
 
 /* Re-align nav-bar */
+
 .top-nav{
+display:flex;
 flex-direction: column; 
-width: 640px; 
+width: 100%; 
 }
-
-/* Resize hero video */
-
-video{
-  width: 640px;
-}
-
-/* Reside Quote */
-
-#quote{
-width: 640px;
-  }
-
-#quote h1{
-  font-size: 25px;
-}
+  
 
 /*resize Ethos section */
 #ethos{
-  width: 560px;
-    margin: 0;
-    height: 900px
+  height: 850px;
+}
+
+
+#ethos p, li{
+  font-size: 25px;
+  padding: 20px;
 }
 
 /* Resize kids blocks image */
-#kids-blocks{
+/*#kids-blocks{
   width:630px;
   margin-top: 140px;
 }
 
 
 /*Resize Weekly meet up banner */
-#weekly {
+/*#weekly {
   width: 640px;
 }
 
 
 /* Restyle and size meet ups on timetable */
+#time-table{
+  display: flex;
+  flex-direction: column-reverse;
+  align-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+
+}
 #time-table div{
-  margin: 0;
-  width: 640px;
-  border-bottom: 10px solid white;
+width: 100%;
+
 }
 
+}
 /* Re-aligning testimonial section so that the #kids-blocks image is showing */
 
-#our-parents{
+/*#our-parents{
   margin-top: 820px;
-  width: 640px;
 }
 
 #contact-info li, p{
@@ -503,25 +521,22 @@ font-size: 20px;
 
 /* Resize footer */
 
-footer{
+/*footer{
 width: 640px;
 }
-
 
 /* Events page */
 
 
 /* Restyle events heading */
 
-.events{
-  text-align: center;
-  padding-top: 40px;
+/*adding-top: 40px;
   }
 
   /* yoga advertisment */
 
   /*Resize yoga images */
-  .item, .item-1 {
+  /*.item, .item-1 {
     width: 150px;
     height: 150px;
   }
@@ -532,7 +547,7 @@ width: 640px;
 }
 /* Re-size massage section*/
 
-.container-massage{
+/*.container-massage{
 width: 640px;
 
 }
@@ -541,14 +556,13 @@ width: 640px;
 
 /* Re-size weaning section*/
 
-.video-section{
+/*.video-section{
   width: 640px;
 }
 
-  }
 
 /* Restyle and align sign up photo */
-#sign-up-photo{
+/*#sign-up-photo{
   margin: 317px 415px 0;
   border-radius: 50%;
 
@@ -556,7 +570,7 @@ width: 640px;
 
 /* Resize form section */
 
-#sign-up-form{
+/*#sign-up-form{
   width:580px;
 }
 
@@ -567,19 +581,40 @@ width: 640px;
 
 /* Re-size contact us form page */
 
-#form{
+/*#form{
   width:620px
 }
 #contact-us{
   width:640px;
 }
+
+}
+/*For small phone screens from 640px wide to 768px*/
+@media screen 
+  and (max-device-width: 639px)
+  and (min-device-width: 480px) {
+ 
+#ethos{
+  height: 1250px;
+}
+
+/* Restyling the meetup up section */
+#time-table {
+  display: flex;
+  flex-direction: column-reverse;
+  align-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
   }
 
-
+#time-table div{
+  width: 100%;
+}
+}
 /*For small phone screens from 360px wide to 639px*/
 @media screen 
   and (min-device-width: 360px)
-  and (max-device-width: 639px) {
+  and (max-device-width: 479px) {
 
 
 /* Resize nav bar */
@@ -589,103 +624,49 @@ flex-direction: column;
 padding: 0;
   }
 
+
+/* Re-align nav-bar */
+
 .menu{
 font-size: 20px;
 width: 360px;
 padding-left: 50px;
 }
-
+  
 .menu >a {
   margin: 0 10px;
 }
 
-/*Resize logo */
-
-#logo{
-width: 300px;
-
-}
-
-/* Resize video */
-
-video{
-    width: 360px;
-  }
-
-#video {
-  height: 200px;
-}
-
-/* Resize quote section */
-
-#quote{
-    width: 360px;
-}
-
-.welcome-text {
-  font-size: 20px;
-  margin: 10px;
-}
 
 /* Re-size ethos section */
+
 #ethos{
-height: 700px;
-width: 320px;
-margin: 0;
-padding: 0 0 0 30px
-}
-
-#welcome h2, h3{
-  font-size: 20px;
-}
-
-#ethos p {
-  font-size: 17px;
-  padding: 0 7px;
-}
-
-#ethos h3{
-  font-size: 20px;
-
-}
-#ethos li {
-  padding: 0 10px 10px;
-  font-size: 17px;
-}
-
-#weekly {
-width: 350px;
-font-size: 25px;
+  height: 1550px;
 }
 
 
+/* Restyling the meetup up section */
 #time-table {
-  height: 1050px;
-  width: 300px;
-}
-/* Re-size and re- align Kids blocks */
-#kids-blocks{
-  height: 300px;
-width: 350px;
-margin: 220px 0;
-}
+  display: flex;
+  flex-direction: column-reverse;
+  align-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  }
 
-/* Resize meet up section */
-#time-table div {
-    margin: 0;
-    width: 350px;
-    height: 350px;
-    border: 10px solid white;
-}
+  #time-table div{
+    width: 100%;
+  }
+
+  
+
 
 
 /* Style Testimonial section */
-#our-parents {
-  margin-top: 230px;
 
 }
 /*Remove images from Testimonial section */
-.container img{
+/*.container img{
 display:none;
 }
 
@@ -703,7 +684,7 @@ font-size: 20px;
 
 /* Events section */
 
-.events{
+/*.events{
   margin-top: 30px;
   text-align: center;
 }
@@ -713,7 +694,7 @@ font-size: 20px;
 
 /* Make some of the images hide with small screen size */
 
-#yoga .item{
+/*#yoga .item{
   display:none;
 }
 #massage .item{
@@ -721,7 +702,7 @@ font-size: 20px;
 }
 
 /* Change the fonts for both massage and yoga adds */
-#yoga-advertisment h4{
+/*#yoga-advertisment h4{
   font-size: 20px;
 }
 
@@ -729,27 +710,27 @@ font-size: 20px;
   font-size: 20px;
 }
 /* Re- size video */
-#video-weaning{
+/*#video-weaning{
 height:300px;
 width: 300px;
 }
 
 /* Re-size weaning sections font */
-#weaning-advertisment h4{
+/*#weaning-advertisment h4{
   font-size: 20px;
 }
 
 /*Pre-booking form */
 
 /* Make the image hide for small screens */
-.sign-up-photo{
+/*.sign-up-photo{
   display: none;
   
 }
 
 /* Amend the length of for the form */
 
-.sign-up-form{
+/*.sign-up-form{
   height: 650px;
 }
 
@@ -757,46 +738,4 @@ legend{
   font-size: 20px;
 }
 
-}
-
-
-
-
-
-
-/*#comments {
-  height: 2300px;
-}
-
-#contact-info {
-  font-size: 15px;
-}
-
-#contact-us{
-  padding: 0;
-}
-#contact-us h3 {
-  font-size: 20px;
-  padding: 0;
-  margin: 0 0 30px;
-
-}
-#form{
-  margin-top: 60px;
-    padding: 20px;
-}
-
-#name-field {
-  width: 280px;
-  font-size: 15px;
-
-}
-#email-field{
-  width: 280px;
-  font-size: 15px;
-}
-
-#message{
-  width: 280px;
-  font-size: 15px;
 }
