@@ -66,7 +66,8 @@ video{
  /*footer*/
 
  footer{
-   height:300px;
+  height: 220px;
+   width: 100%;
    color: white;
    background-color: #086972;
  }
@@ -79,14 +80,19 @@ video{
   #contact-info{
     font-family: Patua One, Times New Roman, sans-serif;
     text-align: center;
-    font-size: 25px;
+     width: 100%;
      }
     
      #contact-info ul{
        list-style-type: none;
      }
-
-
+#contact-list li{
+  font-size: 20px;
+}
+.fa-brands{
+  font-size: 20px;
+  padding-top: 20px;
+}
 /*body welcome page*/
 
 .welcome-text{
@@ -275,53 +281,55 @@ height: 250px;
 #form-section{
   width:100%;
   height: 650px;
+  width: 100%;
+    height: 650px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: stretch;
+  }
 
-}
-
-.sign-up-photo{
-background: url("https://res.cloudinary.com/dwnm1wdkt/image/upload/v1651264272/Project%201/pexels-tatiana-syrikova-3933250-min_l71ezs.jpg");
-background-size:cover;
-background-position: center;
-width: 100%;
-height: 650px;
-margin-left: 200px;
-}
-
+  #sign-up-photo img{
+    width: 100%;
+    height: 650px;
+    background-size:cover;
+  background-position: center;
+  }
 
 #sign-up-form {
   color: white;
-    max-width: 400px;
-    position: absolute;
+    width: 50%;
     text-align: left;
-    padding: 30px;
-    height: 590px;
-    margin-top: -650px;
     font-weight: 700;
     line-height: 1.5;
     background-color: #086972;
     border-bottom: 2px solid white;
+    padding-left: 20px;
 }
 
 
-.fieldset input{
-  width:100%;
-  height:30px;
-    display: inline-block;
-    text-align: left;
-    font-size: 25px;
-    padding: 5px;
-  }
-
-
-#baby-age {
-  margin: 10px 0;
+.fieldset input {
+  width: 60%;
+  height: 30px;
+  display: inline-block;
+  text-align: left;
   font-size: 25px;
+  padding: 5px;
+  margin: 5px;
+
+}
+#baby-age {
+  margin: 0 0 0 50px;
+  font-size: 20px;
   color: grey;
+
 }
 /*heading */
 
 legend{
-   font-size: 30px;
+   font-size: 25px;
  }
 #course-choice{
   padding: 10px;
@@ -371,6 +379,7 @@ color: white;
 #form{
   margin: 0 30px 20px;
   height: 350px;
+  
   
 }
 
@@ -424,35 +433,13 @@ color:#086972;
 }
 
 
-}
-  
-
-
 /* Pre-booking form */
 
-/*#form-section {
-  width: 640px
-}
 
-/* Amend placement of form */
 
-/*#sign-up-form{
-max-width: 640px;
-    position: relative;
-
-}
-/* Re-size and amend placing on image */
-/*.sign-up-photo{
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    z-index: 1;
-    margin: 350px 400px 0;
-}
 
 
   }
-
 /*For small phone screens from 640px wide to 768px*/
 @media screen 
 and (min-device-width: 640px)
@@ -512,49 +499,17 @@ width: 100%;
   width: 640px;
 }
 
-  }
-/* Re-size massage section*/
-
-/*.container-massage{
-width: 640px;
-
-}
-
-
-
-/* Re-size weaning section*/
-
-/*.video-section{
-  width: 640px;
-}
+  
 
 
 /* Restyle and align sign up photo */
-/*#sign-up-photo{
-  margin: 317px 415px 0;
-  border-radius: 50%;
 
-}
 
 /* Resize form section */
 
-/*#sign-up-form{
-  width:580px;
-}
-
-#form-section {
-  width: 640px;
-}
 
 
 /* Re-size contact us form page */
-
-/*#form{
-  width:620px
-}
-#contact-us{
-  width:640px;
-}
 
 }
 /*For small phone screens from 640px wide to 768px*/
@@ -598,6 +553,48 @@ and (min-device-width: 480px)
 }
 
 
+/* Amend placement of form */
+
+#sign-up-form{
+padding: 30px 0 0 60px; 
+
+}
+/* Re-size and amend placing on image */
+#sign-up-photo{
+  display: none;
+ 
+}
+.fieldset input {
+  font-size: 15px;
+
+}
+
+#baby-age {
+  font-size: 17px;
+}
+
+#mommy-yoga {
+width: 17px;
+height: 17px;
+
+}
+#baby-massage{
+  width: 17px;
+  height: 17px;
+
+}
+#whats-app-group {
+  width: 17px;
+  height: 17px;
+}
+
+legend{
+  font-size: 20px;
+}
+#submit-button input {
+  font-size: 17px;
+  
+}
   }
 /*For small phone screens from 360px wide to 639px*/
 @media screen 
@@ -674,9 +671,6 @@ padding: 0;
 padding:10px 0;
 }
 
-#contact-info li{
-font-size: 20px;
-} 
 /* Events page */
 
 /* Make some of the images hide with small screen size */
@@ -706,23 +700,51 @@ width: 300px;
 #weaning-advertisment h4{
   font-size: 20px;
 }
-}
+
 /*Pre-booking form */
 
 /* Make the image hide for small screens */
-/*.sign-up-photo{
+#sign-up-photo{
   display: none;
   
 }
 
 /* Amend the length of for the form */
 
-/*.sign-up-form{
+.sign-up-form{
   height: 650px;
+width: 100%
+}
+.fieldset input {
+  font-size: 17px;
+height: 20px;
+}
+
+#baby-age {
+  font-size: 17px;
+  padding: 5px;
+}
+
+#mommy-yoga {
+width: 17px;
+height: 17px;
+
+}
+#baby-massage{
+  width: 17px;
+  height: 17px;
+
+}
+#whats-app-group {
+  width: 17px;
+  height: 17px;
 }
 
 legend{
   font-size: 20px;
 }
-
+#submit-button input {
+  font-size: 17px;
+  
 }
+  }
