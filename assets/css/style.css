@@ -428,13 +428,6 @@ color:#086972;
   
 
 
-/*Events page */
-
-/*.events{
-  text-align: center;
-  
-}
-
 /* Pre-booking form */
 
 /*#form-section {
@@ -463,8 +456,7 @@ max-width: 640px;
 /*For small phone screens from 640px wide to 768px*/
 @media screen 
 and (min-device-width: 640px)
-  and (max-device-width: 768px)
-   {
+  and (max-device-width: 768px){
  
 
 /* Re-align nav-bar */
@@ -505,56 +497,12 @@ and (min-device-width: 640px)
 
 #time-table div{
 width: 100%;
-
-}
-
-
-
-
-
-  }
-/* Resize kids blocks image */
-/*#kids-blocks{
-  width:630px;
-  margin-top: 140px;
-}
-
-
-/*Resize Weekly meet up banner */
-/*#weekly {
-  width: 640px;
-}
-
-
-
-/* Re-aligning testimonial section so that the #kids-blocks image is showing */
-
-/*#our-parents{
-  margin-top: 820px;
-}
-
-#contact-info li, p{
-font-size: 20px;
-}
-
-/* Resize footer */
-
-/*footer{
-width: 640px;
 }
 
 /* Events page */
 
-
-/* Restyle events heading */
-
-/*adding-top: 40px;
-  }
-
-  /* yoga advertisment */
-
   /*Resize yoga images */
-  /*.item, .item-1 {
+.item, .item-1 {
     width: 150px;
     height: 150px;
   }
@@ -563,6 +511,8 @@ width: 640px;
   text-align: center;
   width: 640px;
 }
+
+  }
 /* Re-size massage section*/
 
 /*.container-massage{
@@ -639,6 +589,15 @@ and (min-device-width: 480px)
 #time-table div{
   width: 100%;
 }
+
+#yoga .item{
+  display:none;
+}
+#massage .item{
+  display: none;
+}
+
+
   }
 /*For small phone screens from 360px wide to 639px*/
 @media screen 
@@ -717,21 +676,12 @@ padding:10px 0;
 
 #contact-info li{
 font-size: 20px;
-}
-  }
-/* Events section */
-
-/*.events{
-  margin-top: 30px;
-  text-align: center;
-}
-#yoga{
-  text-align: center;
-}
+} 
+/* Events page */
 
 /* Make some of the images hide with small screen size */
 
-/*#yoga .item{
+#yoga .item{
   display:none;
 }
 #massage .item{
@@ -739,7 +689,7 @@ font-size: 20px;
 }
 
 /* Change the fonts for both massage and yoga adds */
-/*#yoga-advertisment h4{
+#yoga-advertisment h4{
   font-size: 20px;
 }
 
@@ -747,16 +697,16 @@ font-size: 20px;
   font-size: 20px;
 }
 /* Re- size video */
-/*#video-weaning{
+#video-weaning{
 height:300px;
 width: 300px;
 }
 
 /* Re-size weaning sections font */
-/*#weaning-advertisment h4{
+#weaning-advertisment h4{
   font-size: 20px;
 }
-
+}
 /*Pre-booking form */
 
 /* Make the image hide for small screens */
