@@ -128,7 +128,7 @@ video{
   padding: 20px 20px;
 }
 
-#ethos p, li{
+#ethos p{
   font-size: 30px;
   padding: 0 20px;
 }
@@ -447,7 +447,7 @@ background-color: white;
 @media only screen 
   and (min-device-width: 1025px) {
     #ethos {
-      height: 600px;
+      height: 400px;
     }
 }
 /*For larger screens from 1024px wide and down*/
@@ -458,10 +458,10 @@ background-color: white;
 /* Ethos Section on home page */    
 
 #ethos{
-  height: 800px;
+  height: 450px;
 }
 
-#ethos p, li{
+#ethos p{
   font-size: 30px;
 
 
@@ -507,11 +507,11 @@ and (min-device-width: 640px)
 
 /*resize Ethos section */
 #ethos{
-  height: 650px;
+  height: 400px;
 }
 
 
-#ethos p, li{
+#ethos p{
   font-size: 25px;
 
 }
@@ -597,7 +597,7 @@ and (min-device-width: 480px)
   
 
 #ethos{
-  height: 1050px;
+  height: 700px;
 }
 
 /* Restyling the meetup up section */
@@ -728,7 +728,7 @@ padding-left: 50px;
 /* Re-size ethos section */
 
 #ethos{
-  height: 1600px;
+  height: 1200px;
 }
 
 
