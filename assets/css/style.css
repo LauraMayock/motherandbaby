@@ -130,7 +130,7 @@ video{
 
 #ethos p, li{
   font-size: 30px;
-  
+  padding: 0 20px;
 }
 
 
@@ -316,12 +316,12 @@ height: 250px;
     line-height: 1.5;
     background-color: #086972;
     border-bottom: 2px solid white;
-    padding-left: 20px;
+    padding: 20px;
 }
 
 
 .fieldset input {
-  width: 60%;
+  width: 350px;
   height: 30px;
   display: inline-block;
   text-align: left;
@@ -364,17 +364,19 @@ legend{
 /*submit button*/
 #submit-button input{
   margin-top: 20px;
-  padding: 10px;
+  padding: 15px;
   text-align: center;
   background-color: white;
   width: 120px;
   color: #086072;
-  font-size: 25px;
+  font-size: 20px;
+  font-weight: 700;
 }
 
-#submit-button:hover{
+#booking-button:hover{
   background-color: #086972;
   color: white;
+  border: 2px solid white;
 }
 
 /*contact us page */
@@ -384,12 +386,13 @@ legend{
 #contact-us{
 background-color: #086972;
 color: white;
+width: 50%;
 }
 
 #form{
   margin: 0 30px 20px;
   height: 350px;
-  
+  width:100%
   
 }
 
@@ -407,25 +410,55 @@ font-size: 20px;
 #form #button{
 width:100px;
 color:#086972;
+background-color: white;
 
 }
 
- #submit-button:hover{
-  color:white;
+ #form #button:hover{
+  border: 2px solid white; 
+  background-color: #086972;
+  color: white;
+}
+
+/*google map */
+#contact-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+} 
+
+
+#contact-wrapper h3{
+  color: white;
   background-color: #086972;
 }
- /* Media Query */
 
 
-/*For larger screens from 1024px wide and down*/
+
+#map-container {
+  height: 400px;
+  width: 50%;
+  background-color: #086972;
+
+}
+  /* Media Query */
+
+/* from 1025 up */
 @media only screen 
+  and (min-device-width: 1025px) {
+    #ethos {
+      height: 600px;
+    }
+}
+/*For larger screens from 1024px wide and down*/
+@media screen
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) {
     
 /* Ethos Section on home page */    
 
 #ethos{
-  height: 900px;
+  height: 800px;
 }
 
 #ethos p, li{
@@ -445,7 +478,9 @@ color:#086972;
 
 /* Pre-booking form */
 
-
+#sign-up-form{
+  width:80%;
+}
 
 
 
@@ -472,7 +507,7 @@ and (min-device-width: 640px)
 
 /*resize Ethos section */
 #ethos{
-  height: 850px;
+  height: 650px;
 }
 
 
@@ -516,13 +551,37 @@ width: 100%;
 
 
 /* Resize form section */
-
-
+.fieldset input {
+  width: 250px;
+  text-align: left;
+}
 
 /* Re-size contact us form page */
-
+#contact-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-content: stretch;
 }
-/*For small phone screens from 640px wide to 768px*/
+#map-container {
+  height: 400px;
+  width: 100%;
+  background-color: #086972;
+  text-align: center;
+}
+
+#contact-us {
+  background-color: #086972;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+#form{
+  margin: 0;
+}
+  }
+
+  /*For small phone screens from 640px wide to 768px*/
 @media screen 
 and (min-device-width: 480px)
   and (max-device-width: 639px) {
@@ -538,7 +597,7 @@ and (min-device-width: 480px)
   
 
 #ethos{
-  height: 1000px;
+  height: 1050px;
 }
 
 /* Restyling the meetup up section */
@@ -567,7 +626,7 @@ and (min-device-width: 480px)
 
 #sign-up-form{
 padding: 30px 0 0 60px; 
-
+width: 100%;
 }
 /* Re-size and amend placing on image */
 #sign-up-photo{
@@ -605,11 +664,37 @@ legend{
   font-size: 17px;
   
 }
+
+/* Re-position Map in contact us page */
+#contact-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-content: stretch;
+}
+#map-container {
+  height: 400px;
+  width: 100%;
+  background-color: #086972;
+  text-align: center;
+}
+
+#contact-us {
+  background-color: #086972;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+#form{
+  margin: 0;
+}
   }
-/*For small phone screens from 360px wide to 639px*/
-@media screen 
-  and (min-device-width: 360px)
-  and (max-device-width: 479px) {
+
+
+/*For small phone screens from 350px wide to 639px*/
+@media screen
+and (min-device-width: 350px)
+and (max-device-width: 479px) {
 
 
 /* Resize nav bar */
@@ -643,7 +728,7 @@ padding-left: 50px;
 /* Re-size ethos section */
 
 #ethos{
-  height: 1400px;
+  height: 1600px;
 }
 
 
@@ -721,8 +806,9 @@ width: 300px;
 
 /* Amend the length of for the form */
 #form-section{
-  height: 500px;
+    height: 550px;
 }
+
 #sign-up-form{
   height: 500px;
 width: 100%
@@ -730,6 +816,7 @@ width: 100%
 .fieldset input {
   font-size: 17px;
 height: 20px;
+width: 300px;
 }
 
 #baby-age {
@@ -759,4 +846,29 @@ legend{
   font-size: 17px;
   
 }
+/* Re-position map in contact us page */
+
+#contact-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-content: stretch;
+}
+#map-container {
+  height: 400px;
+  width: 100%;
+  background-color: #086972;
+  text-align: center;
+}
+
+#contact-us {
+  background-color: #086972;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+#form{
+  margin: 0;
+}
+
   }
