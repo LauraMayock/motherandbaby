@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,130 +10,129 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Westport's Mother and baby group</title>
 </head>
+
 <body>
-    <header>
-        <div class="top-nav">
-            <div>
-              <!--Logo in nav bar with embedded link to homepage-->
-              <a href="index.html">
-                <img id="logo"
-                  src="https://res.cloudinary.com/dwnm1wdkt/image/upload/v1652185276/Project%201/Mother_and_baby_Logo_w07dsl.png"
-                  alt="Westport Mother and baby group logo">
-              </a>
-            </div>
-           <nav>
-            <div class ="menu">
-              <a href="index.html">Home</a>
-              <a href="events.html">Events</a>
-              <a href="contact-us.html"
-                aria-label="Go to Contact us section. Fill out the Get in touch form to contact us.">Contact us</a>
-            </div>
-          </nav>
-          </div>
- </header>
-</nav>
-
-<section>
-    
-        
-       
-<form action="http://formdump.codeinstitute.net" method="post">
-  <div id="form-section">
-<div id="sign-up-form">
-    <fieldset class="fieldset">
-        <legend>Your Details:</legend>
-       
-        <div>
-            <label for="name-field" class="block-label">Name</label>
-            <input id="name-field-section" type="text" name="full_name" placeholder="Your name" required>
-        </div>
-        <div>
-            <label for="email-field" class="block-label">Email</label>
-            <input id="email-field-section" type="email" name="email" placeholder="Your email" required>
-        </div>
-        <div>
-            <label for="babys-name-field" class="block-label">Name</label>
-            <input id="babys-name-section" type="text" name="full_babys-name" placeholder="Your baby's name">
-        </div>
-        <div>
-        <label for="babys-age" class="block-label">Baby's age</label><br>
-        <select id="baby-age" name="baby's-age" required>
-            <option value="under-3-months">Under 3 months</option>
-            <option value="3-6_months">3-6 months</option>
-            <option value="6-12_months">6-12 months</option>
-            <option value="12-24_months">12-24 months</option>
-            <option value="pre-school">Pre-school</option>
-        </select>
-    </div>
-
-        </fieldset>
-
-        <div id="course-choice"></div>
-        <fieldset>
-            <legend>Course choices:</legend>
-        
-            <input id="mommy-yoga" type="radio" name="course" required> 
-            <label for="course-choice">Mommy and me yoga</label>
-            <br>
-            <input id="baby-massage" type="radio" name="course" required> 
-            <label for="course-choice">Baby Massage</label>
-        </fieldset>
-        <br>
-            <input type="checkbox" id="whats-app-group" name="whats-app-group">
-            <label for="whats-app-group-approval">Click to join our Whats app group</label>
-
-   <div id="submit-button">
-       <input id="booking-button" type="submit" value="Pre-Book">
-     </div>
-</div>
-     <div id="sign-up-photo">
-       <img src="https://res.cloudinary.com/dwnm1wdkt/image/upload/v1652818710/Project%201/pexels-tatiana-syrikova-3933250-min_2_1_qbbjgh.jpg">
+  <header>
+    <div class="top-nav">
+      <div>
+        <!--Logo in nav bar with embedded link to homepage-->
+        <a href="index.html">
+          <img id="logo"
+            src="https://res.cloudinary.com/dwnm1wdkt/image/upload/v1652185276/Project%201/Mother_and_baby_Logo_w07dsl.png"
+            alt="Westport Mother and baby group logo">
+        </a>
       </div>
-    </div> 
-      
-</div>
-    </section>
-</fieldset>
-</form>
-</div>
+      <nav>
+        <!--Nav bar-->
+        <div class="menu">
+          <a href="index.html">Home</a>
+          <a href="events.html">Events</a>
+          <a href="contact-us.html"
+            aria-label="Go to Contact us section. Fill out the Get in touch form to contact us.">Contact us</a>
+        </div>
+      </nav>
+    </div>
+  </header>
 
+  <!--Pre-booking form-->
+  <section>
+    <div id="heading-form"><h2>Pre-Booking Form:</h2> </div>
+    <!--Link to form dump-->
+    <form action="http://formdump.codeinstitute.net" method="post">
+      <div id="form-section">
+        <div id="sign-up-form">
+          <fieldset class="fieldset">
+            <!--Contact information-->
+            <legend>Your Details:</legend>
+            <div>
+              <label for="name-field-section" class="block-label">Name</label>
+              <input id="name-field-section" type="text" name="full_name" placeholder="Your name" required>
+            </div>
+            <div>
+              <label for="email-field-section" class="block-label">Email</label>
+              <input id="email-field-section" type="email" name="email" placeholder="Your email" required>
+            </div>
+            <div>
+              <label for="babys-name-section" class="block-label">Name</label>
+              <input id="babys-name-section" type="text" name="full_babys-name" placeholder="Your baby's name">
+            </div>
+            <!--Drop down box-->
+            <div>
+              <label for="baby-age" class="block-label">Baby's age</label><br>
+              <select id="baby-age" name="baby's-age">
+                <option value="under-3-months">Under 3 months</option>
+                <option value="3-6_months">3-6 months</option>
+                <option value="6-12_months">6-12 months</option>
+                <option value="12-24_months">12-24 months</option>
+                <option value="pre-school">Pre-school</option>
+              </select>
+            </div>
+          </fieldset>
+          <!--Radio buttons-->
+          <div id="course-choice"></div>
+          <fieldset>
+            <legend>Course choices:</legend>
+
+            <input id="mommy-yoga" type="radio" name="course" required>
+            <label for="mommy-yoga">Mommy and me yoga</label>
+            <br>
+            <input id="baby-massage" type="radio" name="course" required>
+            <label for="baby-massage">Baby Massage</label>
+            <br>
+            <!--Check-box-->
+            <input type="checkbox" id="whats-app-group" name="whats-app-group">
+            <label for="whats-app-group">Click to join our Whats app group</label>
+            <!--Submit button-->
+            <div id="submit-button">
+              <input id="booking-button" type="submit" value="Pre-Book">
+            </div>
+          </fieldset>
+        </div>
+            <!--Image-->
+            <div id="sign-up-photo">
+              <img
+                src="https://res.cloudinary.com/dwnm1wdkt/image/upload/v1652818710/Project%201/pexels-tatiana-syrikova-3933250-min_2_1_qbbjgh.jpg"
+                alt="Toddler lifting wooden blocks in the air">
+            </div>
+          
         
+      </div>
 
-<footer>
+    </form>
+  </section>
+
+
+
+  <footer>
+    <!--Contact information for the baby group-->
     <section>
-
-              <div id="contact-info">
-                <h3>Contact us</h3>
-                  <ul id="contact-list">
-                  <li>
-                    The Fairgreen,<br>
-                    Westport,
-                    Co. Mayo.
-                  </li>
-                  <li>
-                    motherandme.westport@yahoo.com
-                  </li>
-                  <li>
-                    098-254675
-                  </li>
-                </ul>
-        
-                <span id="social-media">
-                  <a href="http://www.facebook.com" target="_blank" rel="noopener"
-                    aria-label="Find us on Facebook (Link opens in a new tab)"> <i class="fa-brands fa-facebook"></i></a>
-                  <a href="http://www.Instagram.com" target="_blank" rel="noopener"
-                    aria-label="Find us on Instagram (Link opens in a new tab)"> <i class="fa-brands fa-instagram"></i></a>
-                </span>
-              </div>
-        
-        
-            </section>
-        
-        
-    
-    </footer>
-</footer>
-<!--Font awesome script-->
-<script src="https://kit.fontawesome.com/9fec73d71e.js" crossorigin="anonymous"></script>
+      <div id="contact-info">
+        <h3>Contact us</h3>
+        <ul id="contact-list">
+          <li>
+            The Fairgreen,<br>
+            Westport,
+            Co. Mayo.
+          </li>
+          <li>
+            motherandme.westport@yahoo.com
+          </li>
+          <li>
+            098-254675
+          </li>
+        </ul>
+        <!--Social media icons-->
+        <span id="social-media">
+          <a href="http://www.facebook.com" target="_blank" rel="noopener"
+            aria-label="Find us on Facebook (Link opens in a new tab)"> <i class="fa-brands fa-facebook"></i></a>
+          <a href="http://www.Instagram.com" target="_blank" rel="noopener"
+            aria-label="Find us on Instagram (Link opens in a new tab)"> <i class="fa-brands fa-instagram"></i></a>
+        </span>
+      </div>
+    </section>
+  </footer>
+  <!--Font awesome script-->
+  <script src="https://kit.fontawesome.com/9fec73d71e.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
