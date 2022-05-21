@@ -51,7 +51,7 @@ p {
 }
 /* Nav buttons */
 .menu>a {
-  font-family: Patua One , Georgia, sans-serif;
+  font-family: 'Patua One' , Georgia, sans-serif;
   margin: 0 1rem;
   overflow: hidden;
   color: #086972;
@@ -88,7 +88,7 @@ footer {
 
 /*styling of footer*/
 #contact-info {
-  font-family: Patua One , Georgia, sans-serif;
+  font-family: 'Patua One' , Georgia, sans-serif;
   text-align: center;
   width: 100%;
 }
@@ -309,7 +309,7 @@ h2 {
   color: white;
   text-align: center;
   height: 50px;
-  font-size: 40px;
+  font-size: 30px;
   margin-bottom: 20px;
 }
 
@@ -434,7 +434,7 @@ padding-top: 40px;
 }
 
 #form label{
-  font-family: Patua One , Georgia, sans-serif;
+  font-family: 'Patua One' , Georgia, sans-serif;
   font-size: 25px;
 }
 #form input {
@@ -489,28 +489,29 @@ padding-top: 40px;
 /* Media Query */
 
 /* from 1025 up */
-@media only screen and (min-device-width: 1025px) {
+@media only screen and (min-width: 1025px) {
   #ethos {
     height: 400px;
   }
 }
 
 /*For larger screens from 1024px wide and down*/
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen 
+and (max-width: 1024px){
+ 
+
 
   /* Ethos Section on home page */
 
-  #ethos {
-    height: 450px;
+ #ethos {
+    height: 550px;
   }
 
   #ethos p {
     font-size: 30px;
-
-
   }
 
-
+/* Re-styling meet-up section */
   #time-table {
     display: flex;
     align-content: flex-start;
@@ -529,12 +530,12 @@ padding-top: 40px;
 
 }
 
-/*For small phone screens from 640px wide to 768px*/
-@media screen and (min-device-width: 640px) and (max-device-width: 768px) {
+/*For small phone screens max width 768px*/
+@media screen and (max-width: 768px) {
 
 
   /* Re-align nav-bar */
-  .top-nav {
+.top-nav {
     display: flex;
     list-style-type: none;
     margin: 0 20px;
@@ -549,8 +550,8 @@ padding-top: 40px;
 
 
   /*resize Ethos section */
-  #ethos {
-    height: 400px;
+ #ethos {
+  height: 500px;
   }
 
 
@@ -582,11 +583,7 @@ padding-top: 40px;
     height: 150px;
   }
 
-  #adds {
-    text-align: center;
-    width: 640px;
-  }
-
+ 
 
 
 
@@ -615,7 +612,7 @@ padding-top: 40px;
   }
 
   /* Change the color of the map heading */
-  #contact-wrapper h3 {
+ #contact-wrapper h3 {
     color: white;
     padding-bottom: 90px;
   }
@@ -630,18 +627,15 @@ padding-top: 40px;
   /* change color of header */
   #contact-us, h3{
     color: white;
-
   }
-
-  
-
   #form {
     margin: 0;
   }
 }
 
-/*For small phone screens from 640px wide to 768px*/
-@media screen and (min-device-width: 480px) and (max-device-width: 639px) {
+/*For small phone screens Max wide to 639px*/
+@media screen 
+and (max-width: 639px) {
 
   .top-nav {
     display: flex;
@@ -764,10 +758,9 @@ padding-top: 40px;
 
 
 }
-/*For small phone screens from 350px wide to 639px*/
+/*For small phone screens max wide to 479px*/
 @media screen 
-and (min-device-width: 350px) 
-and (max-device-width: 479px) {
+and (max-width: 479px) {
 
 
   /* Resize nav bar */
@@ -802,12 +795,12 @@ and (max-device-width: 479px) {
   /* Re-size ethos section */
 
   #ethos {
-    height: 1200px;
+    height: 800px;
   }
 
 
   /* Restyling the meetup up section */
-  #time-table {
+ #time-table {
     display: flex;
     flex-direction: column-reverse;
     align-content: center;
@@ -820,7 +813,7 @@ and (max-device-width: 479px) {
   }
 
   #weekly-meetup {
-    height: 930px;
+    height: 1300px;
   }
 
 
@@ -862,26 +855,26 @@ and (max-device-width: 479px) {
   }
 
   /* Re- size video */
-  #video-weaning {
+ #video-weaning {
     height: 300px;
     width: 300px;
   }
 
   /* Re-size weaning sections font */
-  #weaning-advertisment h4 {
+ #weaning-advertisment h4 {
     font-size: 20px;
   }
 
   /*Pre-booking form */
 
   /* Make the image hide for small screens */
-  #sign-up-photo {
+#sign-up-photo {
     display: none;
 
   }
 
   /* Amend the length of for the form */
-  #form-section {
+ #form-section {
     height: 550px;
   }
 
@@ -957,7 +950,7 @@ and (max-device-width: 479px) {
 
 /*For small phone screens 349px and smaller*/
 @media screen 
-and (max-device-width: 349px){
+and (max-width: 349px){
 
 /* Resize nav bar */
 
@@ -1022,11 +1015,13 @@ and (max-device-width: 349px){
   .stars {
     padding: 10px 0;
   }
+
+
 /* Events page */
 
   /* Make some of the images hide with small screen size */
 
-  #yoga .item {
+ #yoga .item {
     display: none;
   }
 
@@ -1035,7 +1030,7 @@ and (max-device-width: 349px){
   }
 
   /* Change the fonts for both massage and yoga adds */
-  #yoga-advertisment h4 {
+ #yoga-advertisment h4 {
     font-size: 20px;
   }
 
@@ -1057,7 +1052,7 @@ and (max-device-width: 349px){
   /*Pre-booking form */
 
   /* Make the image hide for small screens */
-  #sign-up-photo {
+ #sign-up-photo {
     display: none;
 
   }
@@ -1069,7 +1064,8 @@ and (max-device-width: 349px){
 
   #sign-up-form {
     height: 500px;
-    width: 100%
+    width: 100%;
+    padding: 0;
   }
 
   .fieldset input {
@@ -1109,7 +1105,7 @@ and (max-device-width: 349px){
   }
    /* Re-position map in contact us page */
 
-  #contact-wrapper {
+ #contact-wrapper {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
